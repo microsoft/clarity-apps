@@ -22,8 +22,7 @@ If applicable, add screenshots to help explain your problem.
 **Project Info**
 If this is an issue happening in a specific Clarity project,
 
-- Project Type [e.g. iOS/Android]
-- Project ID
+- Project ID (share with clarity-apps-support@microsoft.com while mentioning the issue number in the subject)
 
 **Platform/Framework Info**
 
