@@ -8,7 +8,7 @@ Currently Clarity supports Android and iOS including popular cross-platform fram
 
 |           | Android | iOS | Notes |
 |-----------|---------|-----|-------|
-| Native | Full Support | Basic Support | - For iOS, only **UIKit** views are supported. **SwiftUI** support is a work in progress. |
+| Native | Full Support | Basic Support | For native iOS: <br> - **UIKit** views are fully supported. <br> - **SwiftUI** support is enabled by default starting from version `3.0.0` with some limitations. <br> - **SwiftUI** support is available starting from version `2.0.0` behind an experimental flag. |
 | React Native | Full Support | Basic Support | - For versions prior to `4.0.0`, iOS is only enabled behind experimental flag `enableIOS_experimental`. |
 | Cordova | Full Support | No Support | |
 | Ionic | Full Support | No Support | |
