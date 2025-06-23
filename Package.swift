@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Clarity",
-            url: "https://www.clarity.ms/apps/resources/ios/Clarity-3.0.7.xcframework.zip",
-            checksum: "cc91f45435a8c8fffa1d8d215170f678f35c6fb1726acbc02cc3432b74308465"
+            url: "https://www.clarity.ms/apps/resources/ios/Clarity-3.0.8.xcframework.zip",
+            checksum: "95394c3510972eba304f471297c4e2e7d03606d8187b8e14eb58178d9c04c01e"
         ),
     ]
 )
