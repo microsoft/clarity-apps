@@ -1,16 +1,13 @@
-// ignore_for_file: type=lint, type=warning
-
-// This is a generated file - do not edit.
 //
-// Generated from MutationPayload.proto.
-
-// @dart = 3.3
+//  Generated code. Do not modify.
+//  source: MutationPayload.proto
+//
+// @dart = 2.12
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: curly_braces_in_flow_control_structures
-// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, unused_import
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
 import 'dart:convert' as $convert;
 import 'dart:core' as $core;
@@ -127,8 +124,8 @@ const MaskFilterType$json = {
 };
 
 /// Descriptor for `MaskFilterType`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List maskFilterTypeDescriptor =
-    $convert.base64Decode('Cg5NYXNrRmlsdGVyVHlwZRISCg5CbHVyTWFza0ZpbHRlchAA');
+final $typed_data.Uint8List maskFilterTypeDescriptor = $convert.base64Decode(
+    'Cg5NYXNrRmlsdGVyVHlwZRISCg5CbHVyTWFza0ZpbHRlchAA');
 
 @$core.Deprecated('Use shaderTypeDescriptor instead')
 const ShaderType$json = {
@@ -158,8 +155,8 @@ const LooperType$json = {
 };
 
 /// Descriptor for `LooperType`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List looperTypeDescriptor =
-    $convert.base64Decode('CgpMb29wZXJUeXBlEhMKD0xheWVyRHJhd0xvb3BlchAA');
+final $typed_data.Uint8List looperTypeDescriptor = $convert.base64Decode(
+    'CgpMb29wZXJUeXBlEhMKD0xheWVyRHJhd0xvb3BlchAA');
 
 @$core.Deprecated('Use pathEffectTypeDescriptor instead')
 const PathEffectType$json = {
@@ -206,8 +203,8 @@ const IntList$json = {
 };
 
 /// Descriptor for `IntList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List intListDescriptor =
-    $convert.base64Decode('CgdJbnRMaXN0EhQKBXZhbHVlGAEgAygFUgV2YWx1ZQ==');
+final $typed_data.Uint8List intListDescriptor = $convert.base64Decode(
+    'CgdJbnRMaXN0EhQKBXZhbHVlGAEgAygFUgV2YWx1ZQ==');
 
 @$core.Deprecated('Use floatListDescriptor instead')
 const FloatList$json = {
@@ -218,8 +215,8 @@ const FloatList$json = {
 };
 
 /// Descriptor for `FloatList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List floatListDescriptor =
-    $convert.base64Decode('CglGbG9hdExpc3QSFAoFdmFsdWUYASADKAJSBXZhbHVl');
+final $typed_data.Uint8List floatListDescriptor = $convert.base64Decode(
+    'CglGbG9hdExpc3QSFAoFdmFsdWUYASADKAJSBXZhbHVl');
 
 @$core.Deprecated('Use doubleListDescriptor instead')
 const DoubleList$json = {
@@ -230,8 +227,8 @@ const DoubleList$json = {
 };
 
 /// Descriptor for `DoubleList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List doubleListDescriptor =
-    $convert.base64Decode('CgpEb3VibGVMaXN0EhQKBXZhbHVlGAEgAygBUgV2YWx1ZQ==');
+final $typed_data.Uint8List doubleListDescriptor = $convert.base64Decode(
+    'CgpEb3VibGVMaXN0EhQKBXZhbHVlGAEgAygBUgV2YWx1ZQ==');
 
 @$core.Deprecated('Use rectDescriptor instead')
 const Rect$json = {
@@ -241,14 +238,7 @@ const Rect$json = {
     {'1': 'left', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'left', '17': true},
     {'1': 'bottom', '3': 3, '4': 1, '5': 2, '9': 2, '10': 'bottom', '17': true},
     {'1': 'right', '3': 4, '4': 1, '5': 2, '9': 3, '10': 'right', '17': true},
-    {
-      '1': 'radii',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '10': 'radii'
-    },
+    {'1': 'radii', '3': 5, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '10': 'radii'},
   ],
   '8': [
     {'1': '_top'},
@@ -274,15 +264,7 @@ const Sampling$json = {
     {'1': '_c', '3': 3, '4': 1, '5': 2, '9': 2, '10': 'C', '17': true},
     {'1': 'filter', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'filter', '17': true},
     {'1': 'mipmap', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'mipmap', '17': true},
-    {
-      '1': 'max_aniso',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'maxAniso',
-      '17': true
-    },
+    {'1': 'max_aniso', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'maxAniso', '17': true},
     {
       '1': 'type',
       '3': 1,
@@ -292,15 +274,7 @@ const Sampling$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 7,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.SamplingType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 7, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SamplingType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -347,16 +321,7 @@ final $typed_data.Uint8List color4fDescriptor = $convert.base64Decode(
 const Lattice$json = {
   '1': 'Lattice',
   '2': [
-    {
-      '1': 'bounds',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'bounds',
-      '17': true
-    },
+    {'1': 'bounds', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'bounds', '17': true},
     {'1': 'colors', '3': 2, '4': 3, '5': 1, '10': 'colors'},
     {'1': 'rect_type', '3': 3, '4': 3, '5': 5, '10': 'rectType'},
     {'1': 'x_divs', '3': 4, '4': 3, '5': 5, '10': 'xDivs'},
@@ -419,24 +384,8 @@ final $typed_data.Uint8List rSXformDescriptor = $convert.base64Decode(
 const Locale$json = {
   '1': 'Locale',
   '2': [
-    {
-      '1': 'languageCode',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '9': 0,
-      '10': 'languageCode',
-      '17': true
-    },
-    {
-      '1': 'countryCode',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '9': 1,
-      '10': 'countryCode',
-      '17': true
-    },
+    {'1': 'languageCode', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'languageCode', '17': true},
+    {'1': 'countryCode', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'countryCode', '17': true},
   ],
   '8': [
     {'1': '_languageCode'},
@@ -487,201 +436,27 @@ final $typed_data.Uint8List textDecorationDescriptor = $convert.base64Decode(
 const TextStyle$json = {
   '1': 'TextStyle',
   '2': [
-    {
-      '1': 'inherit',
-      '3': 1,
-      '4': 1,
-      '5': 8,
-      '9': 0,
-      '10': 'inherit',
-      '17': true
-    },
-    {
-      '1': 'color',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 1,
-      '10': 'color',
-      '17': true
-    },
-    {
-      '1': 'backgroundColor',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 2,
-      '10': 'backgroundColor',
-      '17': true
-    },
-    {
-      '1': 'fontSize',
-      '3': 4,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'fontSize',
-      '17': true
-    },
-    {
-      '1': 'fontWeight',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontWeight',
-      '9': 4,
-      '10': 'fontWeight',
-      '17': true
-    },
-    {
-      '1': 'fontStyle',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'fontStyle',
-      '17': true
-    },
-    {
-      '1': 'letterSpacing',
-      '3': 7,
-      '4': 1,
-      '5': 1,
-      '9': 6,
-      '10': 'letterSpacing',
-      '17': true
-    },
-    {
-      '1': 'wordSpacing',
-      '3': 8,
-      '4': 1,
-      '5': 1,
-      '9': 7,
-      '10': 'wordSpacing',
-      '17': true
-    },
-    {
-      '1': 'textBaseline',
-      '3': 9,
-      '4': 1,
-      '5': 5,
-      '9': 8,
-      '10': 'textBaseline',
-      '17': true
-    },
-    {
-      '1': 'height',
-      '3': 10,
-      '4': 1,
-      '5': 1,
-      '9': 9,
-      '10': 'height',
-      '17': true
-    },
-    {
-      '1': 'leadingDistribution',
-      '3': 11,
-      '4': 1,
-      '5': 5,
-      '9': 10,
-      '10': 'leadingDistribution',
-      '17': true
-    },
-    {
-      '1': 'locale',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale',
-      '9': 11,
-      '10': 'locale',
-      '17': true
-    },
-    {
-      '1': 'foreground',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint',
-      '9': 12,
-      '10': 'foreground',
-      '17': true
-    },
-    {
-      '1': 'background',
-      '3': 14,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint',
-      '9': 13,
-      '10': 'background',
-      '17': true
-    },
-    {
-      '1': 'decoration',
-      '3': 15,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextDecoration',
-      '9': 14,
-      '10': 'decoration',
-      '17': true
-    },
-    {
-      '1': 'decorationColor',
-      '3': 16,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 15,
-      '10': 'decorationColor',
-      '17': true
-    },
-    {
-      '1': 'decorationStyle',
-      '3': 17,
-      '4': 1,
-      '5': 5,
-      '9': 16,
-      '10': 'decorationStyle',
-      '17': true
-    },
-    {
-      '1': 'decorationThickness',
-      '3': 18,
-      '4': 1,
-      '5': 1,
-      '9': 17,
-      '10': 'decorationThickness',
-      '17': true
-    },
-    {
-      '1': 'fontFamily',
-      '3': 19,
-      '4': 1,
-      '5': 9,
-      '9': 18,
-      '10': 'fontFamily',
-      '17': true
-    },
-    {
-      '1': 'fontFamilyFallback',
-      '3': 20,
-      '4': 3,
-      '5': 9,
-      '10': 'fontFamilyFallback'
-    },
-    {
-      '1': 'overflow',
-      '3': 21,
-      '4': 1,
-      '5': 5,
-      '9': 19,
-      '10': 'overflow',
-      '17': true
-    },
+    {'1': 'inherit', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'inherit', '17': true},
+    {'1': 'color', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 1, '10': 'color', '17': true},
+    {'1': 'backgroundColor', '3': 3, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 2, '10': 'backgroundColor', '17': true},
+    {'1': 'fontSize', '3': 4, '4': 1, '5': 1, '9': 3, '10': 'fontSize', '17': true},
+    {'1': 'fontWeight', '3': 5, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontWeight', '9': 4, '10': 'fontWeight', '17': true},
+    {'1': 'fontStyle', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'fontStyle', '17': true},
+    {'1': 'letterSpacing', '3': 7, '4': 1, '5': 1, '9': 6, '10': 'letterSpacing', '17': true},
+    {'1': 'wordSpacing', '3': 8, '4': 1, '5': 1, '9': 7, '10': 'wordSpacing', '17': true},
+    {'1': 'textBaseline', '3': 9, '4': 1, '5': 5, '9': 8, '10': 'textBaseline', '17': true},
+    {'1': 'height', '3': 10, '4': 1, '5': 1, '9': 9, '10': 'height', '17': true},
+    {'1': 'leadingDistribution', '3': 11, '4': 1, '5': 5, '9': 10, '10': 'leadingDistribution', '17': true},
+    {'1': 'locale', '3': 12, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale', '9': 11, '10': 'locale', '17': true},
+    {'1': 'foreground', '3': 13, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint', '9': 12, '10': 'foreground', '17': true},
+    {'1': 'background', '3': 14, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint', '9': 13, '10': 'background', '17': true},
+    {'1': 'decoration', '3': 15, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextDecoration', '9': 14, '10': 'decoration', '17': true},
+    {'1': 'decorationColor', '3': 16, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 15, '10': 'decorationColor', '17': true},
+    {'1': 'decorationStyle', '3': 17, '4': 1, '5': 5, '9': 16, '10': 'decorationStyle', '17': true},
+    {'1': 'decorationThickness', '3': 18, '4': 1, '5': 1, '9': 17, '10': 'decorationThickness', '17': true},
+    {'1': 'fontFamily', '3': 19, '4': 1, '5': 9, '9': 18, '10': 'fontFamily', '17': true},
+    {'1': 'fontFamilyFallback', '3': 20, '4': 3, '5': 9, '10': 'fontFamilyFallback'},
+    {'1': 'overflow', '3': 21, '4': 1, '5': 5, '9': 19, '10': 'overflow', '17': true},
   ],
   '8': [
     {'1': '_inherit'},
@@ -746,61 +521,12 @@ const InlineSpan$json = {
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'type', '17': true},
     {'1': 'text', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'text', '17': true},
-    {
-      '1': 'children',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.InlineSpan',
-      '10': 'children'
-    },
-    {
-      '1': 'style',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextStyle',
-      '9': 2,
-      '10': 'style',
-      '17': true
-    },
-    {
-      '1': 'locale',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale',
-      '9': 3,
-      '10': 'locale',
-      '17': true
-    },
-    {
-      '1': 'spellOut',
-      '3': 6,
-      '4': 1,
-      '5': 8,
-      '9': 4,
-      '10': 'spellOut',
-      '17': true
-    },
-    {
-      '1': 'alignment',
-      '3': 7,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'alignment',
-      '17': true
-    },
-    {
-      '1': 'baseline',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 6,
-      '10': 'baseline',
-      '17': true
-    },
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.InlineSpan', '10': 'children'},
+    {'1': 'style', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextStyle', '9': 2, '10': 'style', '17': true},
+    {'1': 'locale', '3': 5, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale', '9': 3, '10': 'locale', '17': true},
+    {'1': 'spellOut', '3': 6, '4': 1, '5': 8, '9': 4, '10': 'spellOut', '17': true},
+    {'1': 'alignment', '3': 7, '4': 1, '5': 5, '9': 5, '10': 'alignment', '17': true},
+    {'1': 'baseline', '3': 8, '4': 1, '5': 5, '9': 6, '10': 'baseline', '17': true},
   ],
   '8': [
     {'1': '_type'},
@@ -830,42 +556,10 @@ final $typed_data.Uint8List inlineSpanDescriptor = $convert.base64Decode(
 const BoxConstraints$json = {
   '1': 'BoxConstraints',
   '2': [
-    {
-      '1': 'minWidth',
-      '3': 1,
-      '4': 1,
-      '5': 1,
-      '9': 0,
-      '10': 'minWidth',
-      '17': true
-    },
-    {
-      '1': 'maxWidth',
-      '3': 2,
-      '4': 1,
-      '5': 1,
-      '9': 1,
-      '10': 'maxWidth',
-      '17': true
-    },
-    {
-      '1': 'minHeight',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '9': 2,
-      '10': 'minHeight',
-      '17': true
-    },
-    {
-      '1': 'maxHeight',
-      '3': 4,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'maxHeight',
-      '17': true
-    },
+    {'1': 'minWidth', '3': 1, '4': 1, '5': 1, '9': 0, '10': 'minWidth', '17': true},
+    {'1': 'maxWidth', '3': 2, '4': 1, '5': 1, '9': 1, '10': 'maxWidth', '17': true},
+    {'1': 'minHeight', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'minHeight', '17': true},
+    {'1': 'maxHeight', '3': 4, '4': 1, '5': 1, '9': 3, '10': 'maxHeight', '17': true},
   ],
   '8': [
     {'1': '_minWidth'},
@@ -886,78 +580,15 @@ final $typed_data.Uint8List boxConstraintsDescriptor = $convert.base64Decode(
 const StrutStyle$json = {
   '1': 'StrutStyle',
   '2': [
-    {
-      '1': 'fontFamily',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '9': 0,
-      '10': 'fontFamily',
-      '17': true
-    },
-    {
-      '1': 'fontFamilyFallback',
-      '3': 2,
-      '4': 3,
-      '5': 9,
-      '10': 'fontFamilyFallback'
-    },
-    {
-      '1': 'fontSize',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '9': 1,
-      '10': 'fontSize',
-      '17': true
-    },
+    {'1': 'fontFamily', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'fontFamily', '17': true},
+    {'1': 'fontFamilyFallback', '3': 2, '4': 3, '5': 9, '10': 'fontFamilyFallback'},
+    {'1': 'fontSize', '3': 3, '4': 1, '5': 1, '9': 1, '10': 'fontSize', '17': true},
     {'1': 'height', '3': 4, '4': 1, '5': 1, '9': 2, '10': 'height', '17': true},
-    {
-      '1': 'leading',
-      '3': 5,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'leading',
-      '17': true
-    },
-    {
-      '1': 'leadingDistribution',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'leadingDistribution',
-      '17': true
-    },
-    {
-      '1': 'fontWeight',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontWeight',
-      '9': 5,
-      '10': 'fontWeight',
-      '17': true
-    },
-    {
-      '1': 'fontStyle',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 6,
-      '10': 'fontStyle',
-      '17': true
-    },
-    {
-      '1': 'forceStrutHeight',
-      '3': 9,
-      '4': 1,
-      '5': 8,
-      '9': 7,
-      '10': 'forceStrutHeight',
-      '17': true
-    },
+    {'1': 'leading', '3': 5, '4': 1, '5': 1, '9': 3, '10': 'leading', '17': true},
+    {'1': 'leadingDistribution', '3': 6, '4': 1, '5': 5, '9': 4, '10': 'leadingDistribution', '17': true},
+    {'1': 'fontWeight', '3': 7, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontWeight', '9': 5, '10': 'fontWeight', '17': true},
+    {'1': 'fontStyle', '3': 8, '4': 1, '5': 5, '9': 6, '10': 'fontStyle', '17': true},
+    {'1': 'forceStrutHeight', '3': 9, '4': 1, '5': 8, '9': 7, '10': 'forceStrutHeight', '17': true},
   ],
   '8': [
     {'1': '_fontFamily'},
@@ -988,33 +619,9 @@ final $typed_data.Uint8List strutStyleDescriptor = $convert.base64Decode(
 const TextHeightBehavior$json = {
   '1': 'TextHeightBehavior',
   '2': [
-    {
-      '1': 'applyHeightToFirstAscent',
-      '3': 1,
-      '4': 1,
-      '5': 8,
-      '9': 0,
-      '10': 'applyHeightToFirstAscent',
-      '17': true
-    },
-    {
-      '1': 'applyHeightToLastDescent',
-      '3': 2,
-      '4': 1,
-      '5': 8,
-      '9': 1,
-      '10': 'applyHeightToLastDescent',
-      '17': true
-    },
-    {
-      '1': 'leadingDistribution',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'leadingDistribution',
-      '17': true
-    },
+    {'1': 'applyHeightToFirstAscent', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'applyHeightToFirstAscent', '17': true},
+    {'1': 'applyHeightToLastDescent', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'applyHeightToLastDescent', '17': true},
+    {'1': 'leadingDistribution', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'leadingDistribution', '17': true},
   ],
   '8': [
     {'1': '_applyHeightToFirstAscent'},
@@ -1054,43 +661,10 @@ final $typed_data.Uint8List offsetDescriptor = $convert.base64Decode(
 const PlaceholderDimensions$json = {
   '1': 'PlaceholderDimensions',
   '2': [
-    {
-      '1': 'size',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset',
-      '9': 0,
-      '10': 'size',
-      '17': true
-    },
-    {
-      '1': 'alignment',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'alignment',
-      '17': true
-    },
-    {
-      '1': 'baseline',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'baseline',
-      '17': true
-    },
-    {
-      '1': 'baselineOffset',
-      '3': 4,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'baselineOffset',
-      '17': true
-    },
+    {'1': 'size', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset', '9': 0, '10': 'size', '17': true},
+    {'1': 'alignment', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'alignment', '17': true},
+    {'1': 'baseline', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'baseline', '17': true},
+    {'1': 'baselineOffset', '3': 4, '4': 1, '5': 1, '9': 3, '10': 'baselineOffset', '17': true},
   ],
   '8': [
     {'1': '_size'},
@@ -1112,120 +686,18 @@ final $typed_data.Uint8List placeholderDimensionsDescriptor = $convert.base64Dec
 const RenderText$json = {
   '1': 'RenderText',
   '2': [
-    {
-      '1': 'text',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.InlineSpan',
-      '9': 0,
-      '10': 'text',
-      '17': true
-    },
-    {
-      '1': 'constraints',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.BoxConstraints',
-      '9': 1,
-      '10': 'constraints',
-      '17': true
-    },
-    {
-      '1': 'textAlign',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'textAlign',
-      '17': true
-    },
-    {
-      '1': 'textDirection',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'textDirection',
-      '17': true
-    },
-    {
-      '1': 'maxLines',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'maxLines',
-      '17': true
-    },
-    {
-      '1': 'locale',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale',
-      '9': 5,
-      '10': 'locale',
-      '17': true
-    },
-    {
-      '1': 'strutStyle',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.StrutStyle',
-      '9': 6,
-      '10': 'strutStyle',
-      '17': true
-    },
-    {
-      '1': 'textWidthBasis',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'textWidthBasis',
-      '17': true
-    },
-    {
-      '1': 'textHeightBehavior',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.TextHeightBehavior',
-      '9': 8,
-      '10': 'textHeightBehavior',
-      '17': true
-    },
-    {
-      '1': 'placeholderDimensions',
-      '3': 10,
-      '4': 3,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.PlaceholderDimensions',
-      '10': 'placeholderDimensions'
-    },
-    {
-      '1': 'softWrap',
-      '3': 11,
-      '4': 1,
-      '5': 8,
-      '9': 9,
-      '10': 'softWrap',
-      '17': true
-    },
-    {
-      '1': 'overflow',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '9': 10,
-      '10': 'overflow',
-      '17': true
-    },
+    {'1': 'text', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.InlineSpan', '9': 0, '10': 'text', '17': true},
+    {'1': 'constraints', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.BoxConstraints', '9': 1, '10': 'constraints', '17': true},
+    {'1': 'textAlign', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'textAlign', '17': true},
+    {'1': 'textDirection', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'textDirection', '17': true},
+    {'1': 'maxLines', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'maxLines', '17': true},
+    {'1': 'locale', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Locale', '9': 5, '10': 'locale', '17': true},
+    {'1': 'strutStyle', '3': 7, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.StrutStyle', '9': 6, '10': 'strutStyle', '17': true},
+    {'1': 'textWidthBasis', '3': 8, '4': 1, '5': 5, '9': 7, '10': 'textWidthBasis', '17': true},
+    {'1': 'textHeightBehavior', '3': 9, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextHeightBehavior', '9': 8, '10': 'textHeightBehavior', '17': true},
+    {'1': 'placeholderDimensions', '3': 10, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.PlaceholderDimensions', '10': 'placeholderDimensions'},
+    {'1': 'softWrap', '3': 11, '4': 1, '5': 8, '9': 9, '10': 'softWrap', '17': true},
+    {'1': 'overflow', '3': 12, '4': 1, '5': 5, '9': 10, '10': 'overflow', '17': true},
   ],
   '8': [
     {'1': '_text'},
@@ -1269,284 +741,42 @@ const DisplayCommand$json = {
   '1': 'DisplayCommand',
   '2': [
     {'1': 'op', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'op', '17': true},
-    {
-      '1': 'anti_alias',
-      '3': 3,
-      '4': 1,
-      '5': 8,
-      '9': 2,
-      '10': 'antiAlias',
-      '17': true
-    },
-    {
-      '1': 'path_index',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'pathIndex',
-      '17': true
-    },
-    {
-      '1': 'rect',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 4,
-      '10': 'rect',
-      '17': true
-    },
-    {
-      '1': 'rrect',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 5,
-      '10': 'rrect',
-      '17': true
-    },
+    {'1': 'anti_alias', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'antiAlias', '17': true},
+    {'1': 'path_index', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'pathIndex', '17': true},
+    {'1': 'rect', '3': 5, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 4, '10': 'rect', '17': true},
+    {'1': 'rrect', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 5, '10': 'rrect', '17': true},
     {'1': 'matrix', '3': 7, '4': 3, '5': 2, '10': 'matrix'},
-    {
-      '1': 'start_angle',
-      '3': 8,
-      '4': 1,
-      '5': 2,
-      '9': 6,
-      '10': 'startAngle',
-      '17': true
-    },
-    {
-      '1': 'sweep_angle',
-      '3': 9,
-      '4': 1,
-      '5': 2,
-      '9': 7,
-      '10': 'sweepAngle',
-      '17': true
-    },
-    {
-      '1': 'use_center',
-      '3': 10,
-      '4': 1,
-      '5': 8,
-      '9': 8,
-      '10': 'useCenter',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 11,
-      '4': 1,
-      '5': 5,
-      '9': 9,
-      '10': 'paintIndex',
-      '17': true
-    },
-    {
-      '1': 'outer',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 10,
-      '10': 'outer',
-      '17': true
-    },
-    {
-      '1': 'inner',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 11,
-      '10': 'inner',
-      '17': true
-    },
+    {'1': 'start_angle', '3': 8, '4': 1, '5': 2, '9': 6, '10': 'startAngle', '17': true},
+    {'1': 'sweep_angle', '3': 9, '4': 1, '5': 2, '9': 7, '10': 'sweepAngle', '17': true},
+    {'1': 'use_center', '3': 10, '4': 1, '5': 8, '9': 8, '10': 'useCenter', '17': true},
+    {'1': 'paint_index', '3': 11, '4': 1, '5': 5, '9': 9, '10': 'paintIndex', '17': true},
+    {'1': 'outer', '3': 12, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 10, '10': 'outer', '17': true},
+    {'1': 'inner', '3': 13, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 11, '10': 'inner', '17': true},
     {'1': 'x', '3': 14, '4': 1, '5': 2, '9': 12, '10': 'x', '17': true},
     {'1': 'y', '3': 15, '4': 1, '5': 2, '9': 13, '10': 'y', '17': true},
-    {
-      '1': 'image_index',
-      '3': 16,
-      '4': 1,
-      '5': 5,
-      '9': 14,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'sampling',
-      '3': 17,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling',
-      '9': 15,
-      '10': 'sampling',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 18,
-      '4': 1,
-      '5': 5,
-      '9': 16,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 19,
-      '4': 1,
-      '5': 5,
-      '9': 17,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 20,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 18,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'lattice',
-      '3': 21,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Lattice',
-      '9': 19,
-      '10': 'lattice',
-      '17': true
-    },
-    {
-      '1': 'dst',
-      '3': 22,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 20,
-      '10': 'dst',
-      '17': true
-    },
-    {
-      '1': 'filter_mode',
-      '3': 23,
-      '4': 1,
-      '5': 1,
-      '9': 21,
-      '10': 'filterMode',
-      '17': true
-    },
-    {
-      '1': 'center',
-      '3': 24,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 22,
-      '10': 'center',
-      '17': true
-    },
-    {
-      '1': 'src',
-      '3': 25,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 23,
-      '10': 'src',
-      '17': true
-    },
-    {
-      '1': 'constraint',
-      '3': 26,
-      '4': 1,
-      '5': 5,
-      '9': 24,
-      '10': 'constraint',
-      '17': true
-    },
-    {
-      '1': 'point_mode',
-      '3': 27,
-      '4': 1,
-      '5': 5,
-      '9': 25,
-      '10': 'pointMode',
-      '17': true
-    },
-    {
-      '1': 'points',
-      '3': 28,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '10': 'points'
-    },
-    {
-      '1': 'blob_index',
-      '3': 29,
-      '4': 1,
-      '5': 5,
-      '9': 26,
-      '10': 'blobIndex',
-      '17': true
-    },
-    {
-      '1': 'vertices_index',
-      '3': 30,
-      '4': 1,
-      '5': 5,
-      '9': 27,
-      '10': 'verticesIndex',
-      '17': true
-    },
+    {'1': 'image_index', '3': 16, '4': 1, '5': 5, '9': 14, '10': 'imageIndex', '17': true},
+    {'1': 'sampling', '3': 17, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling', '9': 15, '10': 'sampling', '17': true},
+    {'1': 'masked_width', '3': 18, '4': 1, '5': 5, '9': 16, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 19, '4': 1, '5': 5, '9': 17, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 20, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 18, '10': 'maskedColor', '17': true},
+    {'1': 'lattice', '3': 21, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Lattice', '9': 19, '10': 'lattice', '17': true},
+    {'1': 'dst', '3': 22, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 20, '10': 'dst', '17': true},
+    {'1': 'filter_mode', '3': 23, '4': 1, '5': 1, '9': 21, '10': 'filterMode', '17': true},
+    {'1': 'center', '3': 24, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 22, '10': 'center', '17': true},
+    {'1': 'src', '3': 25, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 23, '10': 'src', '17': true},
+    {'1': 'constraint', '3': 26, '4': 1, '5': 5, '9': 24, '10': 'constraint', '17': true},
+    {'1': 'point_mode', '3': 27, '4': 1, '5': 5, '9': 25, '10': 'pointMode', '17': true},
+    {'1': 'points', '3': 28, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '10': 'points'},
+    {'1': 'blob_index', '3': 29, '4': 1, '5': 5, '9': 26, '10': 'blobIndex', '17': true},
+    {'1': 'vertices_index', '3': 30, '4': 1, '5': 5, '9': 27, '10': 'verticesIndex', '17': true},
     {'1': 'mode', '3': 31, '4': 1, '5': 1, '9': 28, '10': 'mode', '17': true},
-    {
-      '1': 'bones',
-      '3': 32,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '10': 'bones'
-    },
+    {'1': 'bones', '3': 32, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '10': 'bones'},
     {'1': 'id', '3': 33, '4': 1, '5': 5, '9': 29, '10': 'id', '17': true},
     {'1': 'name', '3': 34, '4': 1, '5': 9, '9': 30, '10': 'name', '17': true},
     {'1': 'flags', '3': 35, '4': 1, '5': 5, '9': 31, '10': 'flags', '17': true},
-    {
-      '1': 'subset',
-      '3': 36,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 32,
-      '10': 'subset',
-      '17': true
-    },
-    {
-      '1': 'bounds',
-      '3': 37,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 33,
-      '10': 'bounds',
-      '17': true
-    },
-    {
-      '1': 'image_filter_paint',
-      '3': 38,
-      '4': 1,
-      '5': 5,
-      '9': 34,
-      '10': 'imageFilterPaint',
-      '17': true
-    },
+    {'1': 'subset', '3': 36, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 32, '10': 'subset', '17': true},
+    {'1': 'bounds', '3': 37, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 33, '10': 'bounds', '17': true},
+    {'1': 'image_filter_paint', '3': 38, '4': 1, '5': 5, '9': 34, '10': 'imageFilterPaint', '17': true},
     {'1': 'sx', '3': 39, '4': 1, '5': 2, '9': 35, '10': 'sx', '17': true},
     {'1': 'sy', '3': 40, '4': 1, '5': 2, '9': 36, '10': 'sy', '17': true},
     {'1': 'left', '3': 41, '4': 1, '5': 2, '9': 37, '10': 'left', '17': true},
@@ -1560,16 +790,7 @@ const DisplayCommand$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 43,
-      '4': 1,
-      '5': 14,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 43, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -1709,114 +930,18 @@ final $typed_data.Uint8List fontCoordinateDescriptor = $convert.base64Decode(
 const Typeface$json = {
   '1': 'Typeface',
   '2': [
-    {
-      '1': 'family_name',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '9': 0,
-      '10': 'familyName',
-      '17': true
-    },
-    {
-      '1': 'full_name',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '9': 1,
-      '10': 'fullName',
-      '17': true
-    },
-    {
-      '1': 'postscript_name',
-      '3': 3,
-      '4': 1,
-      '5': 9,
-      '9': 2,
-      '10': 'postscriptName',
-      '17': true
-    },
-    {
-      '1': 'style',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontStyle',
-      '9': 3,
-      '10': 'style',
-      '17': true
-    },
-    {
-      '1': 'collection_index',
-      '3': 5,
-      '4': 1,
-      '5': 1,
-      '9': 4,
-      '10': 'collectionIndex',
-      '17': true
-    },
-    {
-      '1': 'coordinates',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontCoordinate',
-      '10': 'coordinates'
-    },
-    {
-      '1': 'data_hash',
-      '3': 7,
-      '4': 1,
-      '5': 9,
-      '9': 5,
-      '10': 'dataHash',
-      '17': true
-    },
-    {
-      '1': 'weight_value',
-      '3': 8,
-      '4': 1,
-      '5': 2,
-      '9': 6,
-      '10': 'weightValue',
-      '17': true
-    },
-    {
-      '1': 'width_value',
-      '3': 9,
-      '4': 1,
-      '5': 2,
-      '9': 7,
-      '10': 'widthValue',
-      '17': true
-    },
-    {
-      '1': 'slant_value',
-      '3': 10,
-      '4': 1,
-      '5': 2,
-      '9': 8,
-      '10': 'slantValue',
-      '17': true
-    },
-    {
-      '1': 'italic_value',
-      '3': 11,
-      '4': 1,
-      '5': 2,
-      '9': 9,
-      '10': 'italicValue',
-      '17': true
-    },
-    {
-      '1': 'pallete_index',
-      '3': 12,
-      '4': 1,
-      '5': 1,
-      '9': 10,
-      '10': 'palleteIndex',
-      '17': true
-    },
+    {'1': 'family_name', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'familyName', '17': true},
+    {'1': 'full_name', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'fullName', '17': true},
+    {'1': 'postscript_name', '3': 3, '4': 1, '5': 9, '9': 2, '10': 'postscriptName', '17': true},
+    {'1': 'style', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontStyle', '9': 3, '10': 'style', '17': true},
+    {'1': 'collection_index', '3': 5, '4': 1, '5': 1, '9': 4, '10': 'collectionIndex', '17': true},
+    {'1': 'coordinates', '3': 6, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FontCoordinate', '10': 'coordinates'},
+    {'1': 'data_hash', '3': 7, '4': 1, '5': 9, '9': 5, '10': 'dataHash', '17': true},
+    {'1': 'weight_value', '3': 8, '4': 1, '5': 2, '9': 6, '10': 'weightValue', '17': true},
+    {'1': 'width_value', '3': 9, '4': 1, '5': 2, '9': 7, '10': 'widthValue', '17': true},
+    {'1': 'slant_value', '3': 10, '4': 1, '5': 2, '9': 8, '10': 'slantValue', '17': true},
+    {'1': 'italic_value', '3': 11, '4': 1, '5': 2, '9': 9, '10': 'italicValue', '17': true},
+    {'1': 'pallete_index', '3': 12, '4': 1, '5': 1, '9': 10, '10': 'palleteIndex', '17': true},
   ],
   '8': [
     {'1': '_family_name'},
@@ -1854,25 +979,8 @@ final $typed_data.Uint8List typefaceDescriptor = $convert.base64Decode(
 const Image$json = {
   '1': 'Image',
   '2': [
-    {
-      '1': 'subset',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'subset',
-      '17': true
-    },
-    {
-      '1': 'data_hash',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '9': 1,
-      '10': 'dataHash',
-      '17': true
-    },
+    {'1': 'subset', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'subset', '17': true},
+    {'1': 'data_hash', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'dataHash', '17': true},
     {'1': 'mipmap', '3': 3, '4': 1, '5': 12, '10': 'mipmap'},
   ],
   '8': [
@@ -1892,61 +1000,13 @@ final $typed_data.Uint8List imageDescriptor = $convert.base64Decode(
 const TextBlobRun$json = {
   '1': 'TextBlobRun',
   '2': [
-    {
-      '1': 'point',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 0,
-      '10': 'point',
-      '17': true
-    },
-    {
-      '1': 'font_size',
-      '3': 2,
-      '4': 1,
-      '5': 2,
-      '9': 1,
-      '10': 'fontSize',
-      '17': true
-    },
-    {
-      '1': 'font_scale_x',
-      '3': 3,
-      '4': 1,
-      '5': 2,
-      '9': 2,
-      '10': 'fontScaleX',
-      '17': true
-    },
-    {
-      '1': 'font_skew_x',
-      '3': 4,
-      '4': 1,
-      '5': 2,
-      '9': 3,
-      '10': 'fontSkewX',
-      '17': true
-    },
-    {
-      '1': 'typeface_index',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'typefaceIndex',
-      '17': true
-    },
+    {'1': 'point', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 0, '10': 'point', '17': true},
+    {'1': 'font_size', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'fontSize', '17': true},
+    {'1': 'font_scale_x', '3': 3, '4': 1, '5': 2, '9': 2, '10': 'fontScaleX', '17': true},
+    {'1': 'font_skew_x', '3': 4, '4': 1, '5': 2, '9': 3, '10': 'fontSkewX', '17': true},
+    {'1': 'typeface_index', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'typefaceIndex', '17': true},
     {'1': 'glyphs', '3': 6, '4': 3, '5': 1, '10': 'glyphs'},
-    {
-      '1': 'positions',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '10': 'positions'
-    },
+    {'1': 'positions', '3': 7, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '10': 'positions'},
     {'1': 'clusters', '3': 8, '4': 3, '5': 1, '10': 'clusters'},
     {'1': 'text', '3': 9, '4': 1, '5': 9, '9': 5, '10': 'text', '17': true},
   ],
@@ -1977,24 +1037,8 @@ final $typed_data.Uint8List textBlobRunDescriptor = $convert.base64Decode(
 const TextBlob$json = {
   '1': 'TextBlob',
   '2': [
-    {
-      '1': 'bounds',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'bounds',
-      '17': true
-    },
-    {
-      '1': 'runs',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlobRun',
-      '10': 'runs'
-    },
+    {'1': 'bounds', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'bounds', '17': true},
+    {'1': 'runs', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlobRun', '10': 'runs'},
   ],
   '8': [
     {'1': '_bounds'},
@@ -2013,48 +1057,12 @@ const Vertices$json = {
   '1': 'Vertices',
   '2': [
     {'1': 'mode', '3': 1, '4': 1, '5': 1, '9': 0, '10': 'mode', '17': true},
-    {
-      '1': 'is_volatile',
-      '3': 2,
-      '4': 1,
-      '5': 8,
-      '9': 1,
-      '10': 'isVolatile',
-      '17': true
-    },
-    {
-      '1': 'positions',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '10': 'positions'
-    },
-    {
-      '1': 'tex_coords',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '10': 'texCoords'
-    },
+    {'1': 'is_volatile', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'isVolatile', '17': true},
+    {'1': 'positions', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '10': 'positions'},
+    {'1': 'tex_coords', '3': 4, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '10': 'texCoords'},
     {'1': 'colors', '3': 5, '4': 3, '5': 1, '10': 'colors'},
-    {
-      '1': 'bone_indices',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.DoubleList',
-      '10': 'boneIndices'
-    },
-    {
-      '1': 'bone_weights',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '10': 'boneWeights'
-    },
+    {'1': 'bone_indices', '3': 6, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DoubleList', '10': 'boneIndices'},
+    {'1': 'bone_weights', '3': 7, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '10': 'boneWeights'},
     {'1': 'indices', '3': 8, '4': 3, '5': 1, '10': 'indices'},
   ],
   '8': [
@@ -2082,44 +1090,10 @@ const ColorFilter$json = {
   '2': [
     {'1': 'color', '3': 2, '4': 1, '5': 1, '9': 1, '10': 'color', '17': true},
     {'1': 'mode', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'mode', '17': true},
-    {
-      '1': 'color4f',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 3,
-      '10': 'color4f',
-      '17': true
-    },
-    {
-      '1': 'matrix',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '9': 4,
-      '10': 'matrix',
-      '17': true
-    },
-    {
-      '1': 'is_rgba',
-      '3': 7,
-      '4': 1,
-      '5': 8,
-      '9': 5,
-      '10': 'isRgba',
-      '17': true
-    },
-    {
-      '1': 'is_row_major',
-      '3': 8,
-      '4': 1,
-      '5': 8,
-      '9': 6,
-      '10': 'isRowMajor',
-      '17': true
-    },
+    {'1': 'color4f', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 3, '10': 'color4f', '17': true},
+    {'1': 'matrix', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '9': 4, '10': 'matrix', '17': true},
+    {'1': 'is_rgba', '3': 7, '4': 1, '5': 8, '9': 5, '10': 'isRgba', '17': true},
+    {'1': 'is_row_major', '3': 8, '4': 1, '5': 8, '9': 6, '10': 'isRowMajor', '17': true},
     {
       '1': 'type',
       '3': 1,
@@ -2129,15 +1103,7 @@ const ColorFilter$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 5,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ColorFilterType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 5, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ColorFilterType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2169,15 +1135,7 @@ const MaskFilter$json = {
   '2': [
     {'1': 'sigma', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'sigma', '17': true},
     {'1': 'style', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'style', '17': true},
-    {
-      '1': 'respect_c_t_m',
-      '3': 4,
-      '4': 1,
-      '5': 8,
-      '9': 3,
-      '10': 'respectCTM',
-      '17': true
-    },
+    {'1': 'respect_c_t_m', '3': 4, '4': 1, '5': 8, '9': 3, '10': 'respectCTM', '17': true},
     {
       '1': 'type',
       '3': 1,
@@ -2187,15 +1145,7 @@ const MaskFilter$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 5,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.MaskFilterType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 5, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.MaskFilterType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2222,168 +1172,25 @@ const Shader$json = {
     {'1': 't_y', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'tY', '17': true},
     {'1': 'matrix', '3': 4, '4': 3, '5': 2, '10': 'matrix'},
     {'1': 'raw', '3': 5, '4': 1, '5': 8, '9': 3, '10': 'raw', '17': true},
-    {
-      '1': 'sampling',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling',
-      '9': 4,
-      '10': 'sampling',
-      '17': true
-    },
-    {
-      '1': 'image_index',
-      '3': 7,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 6,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 9,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 8,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'start',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 9,
-      '10': 'start',
-      '17': true
-    },
-    {
-      '1': 'end',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 10,
-      '10': 'end',
-      '17': true
-    },
-    {
-      '1': 'tile_mode',
-      '3': 13,
-      '4': 1,
-      '5': 1,
-      '9': 11,
-      '10': 'tileMode',
-      '17': true
-    },
-    {
-      '1': 'grad_flags',
-      '3': 14,
-      '4': 1,
-      '5': 1,
-      '9': 12,
-      '10': 'gradFlags',
-      '17': true
-    },
-    {
-      '1': 'colors',
-      '3': 15,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '10': 'colors'
-    },
+    {'1': 'sampling', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling', '9': 4, '10': 'sampling', '17': true},
+    {'1': 'image_index', '3': 7, '4': 1, '5': 5, '9': 5, '10': 'imageIndex', '17': true},
+    {'1': 'masked_width', '3': 8, '4': 1, '5': 5, '9': 6, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 9, '4': 1, '5': 5, '9': 7, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 10, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 8, '10': 'maskedColor', '17': true},
+    {'1': 'start', '3': 11, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 9, '10': 'start', '17': true},
+    {'1': 'end', '3': 12, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 10, '10': 'end', '17': true},
+    {'1': 'tile_mode', '3': 13, '4': 1, '5': 1, '9': 11, '10': 'tileMode', '17': true},
+    {'1': 'grad_flags', '3': 14, '4': 1, '5': 1, '9': 12, '10': 'gradFlags', '17': true},
+    {'1': 'colors', '3': 15, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '10': 'colors'},
     {'1': 'pos', '3': 16, '4': 3, '5': 2, '10': 'pos'},
     {'1': 'local_matrix', '3': 17, '4': 3, '5': 2, '10': 'localMatrix'},
-    {
-      '1': 'center',
-      '3': 18,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 13,
-      '10': 'center',
-      '17': true
-    },
-    {
-      '1': 'radius',
-      '3': 19,
-      '4': 1,
-      '5': 2,
-      '9': 14,
-      '10': 'radius',
-      '17': true
-    },
-    {
-      '1': 'start_angle',
-      '3': 20,
-      '4': 1,
-      '5': 2,
-      '9': 15,
-      '10': 'startAngle',
-      '17': true
-    },
-    {
-      '1': 'end_angle',
-      '3': 21,
-      '4': 1,
-      '5': 2,
-      '9': 16,
-      '10': 'endAngle',
-      '17': true
-    },
-    {
-      '1': 'shader',
-      '3': 22,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Shader',
-      '9': 17,
-      '10': 'shader',
-      '17': true
-    },
-    {
-      '1': 'color4f',
-      '3': 24,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 18,
-      '10': 'color4f',
-      '17': true
-    },
-    {
-      '1': 'color4f_space_data',
-      '3': 25,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.IntList',
-      '9': 19,
-      '10': 'color4fSpaceData',
-      '17': true
-    },
+    {'1': 'center', '3': 18, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 13, '10': 'center', '17': true},
+    {'1': 'radius', '3': 19, '4': 1, '5': 2, '9': 14, '10': 'radius', '17': true},
+    {'1': 'start_angle', '3': 20, '4': 1, '5': 2, '9': 15, '10': 'startAngle', '17': true},
+    {'1': 'end_angle', '3': 21, '4': 1, '5': 2, '9': 16, '10': 'endAngle', '17': true},
+    {'1': 'shader', '3': 22, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Shader', '9': 17, '10': 'shader', '17': true},
+    {'1': 'color4f', '3': 24, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 18, '10': 'color4f', '17': true},
+    {'1': 'color4f_space_data', '3': 25, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.IntList', '9': 19, '10': 'color4fSpaceData', '17': true},
     {
       '1': 'type',
       '3': 1,
@@ -2393,15 +1200,7 @@ const Shader$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 23,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ShaderType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 23, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ShaderType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2464,34 +1263,10 @@ final $typed_data.Uint8List shaderDescriptor = $convert.base64Decode(
 const LayerInfo$json = {
   '1': 'LayerInfo',
   '2': [
-    {
-      '1': 'paint_bits',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintBits',
-      '17': true
-    },
-    {
-      '1': 'color_mode',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'colorMode',
-      '17': true
-    },
+    {'1': 'paint_bits', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintBits', '17': true},
+    {'1': 'color_mode', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'colorMode', '17': true},
     {'1': 'offset', '3': 3, '4': 3, '5': 2, '10': 'offset'},
-    {
-      '1': 'post_translate',
-      '3': 4,
-      '4': 1,
-      '5': 8,
-      '9': 2,
-      '10': 'postTranslate',
-      '17': true
-    },
+    {'1': 'post_translate', '3': 4, '4': 1, '5': 8, '9': 2, '10': 'postTranslate', '17': true},
   ],
   '8': [
     {'1': '_paint_bits'},
@@ -2511,26 +1286,8 @@ final $typed_data.Uint8List layerInfoDescriptor = $convert.base64Decode(
 const Layer$json = {
   '1': 'Layer',
   '2': [
-    {
-      '1': 'layer_info',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.LayerInfo',
-      '9': 0,
-      '10': 'layerInfo',
-      '17': true
-    },
-    {
-      '1': 'paint',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint',
-      '9': 1,
-      '10': 'paint',
-      '17': true
-    },
+    {'1': 'layer_info', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.LayerInfo', '9': 0, '10': 'layerInfo', '17': true},
+    {'1': 'paint', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint', '9': 1, '10': 'paint', '17': true},
   ],
   '8': [
     {'1': '_layer_info'},
@@ -2549,14 +1306,7 @@ final $typed_data.Uint8List layerDescriptor = $convert.base64Decode(
 const Looper$json = {
   '1': 'Looper',
   '2': [
-    {
-      '1': 'layers',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Layer',
-      '10': 'layers'
-    },
+    {'1': 'layers', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Layer', '10': 'layers'},
     {
       '1': 'type',
       '3': 1,
@@ -2566,15 +1316,7 @@ const Looper$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 3,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.LooperType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 3, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.LooperType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2595,26 +1337,9 @@ const PathEffect$json = {
     {'1': 'phase', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'phase', '17': true},
     {'1': 'intervals', '3': 3, '4': 3, '5': 2, '10': 'intervals'},
     {'1': 'radius', '3': 5, '4': 1, '5': 2, '9': 2, '10': 'radius', '17': true},
-    {
-      '1': 'advance',
-      '3': 6,
-      '4': 1,
-      '5': 2,
-      '9': 3,
-      '10': 'advance',
-      '17': true
-    },
+    {'1': 'advance', '3': 6, '4': 1, '5': 2, '9': 3, '10': 'advance', '17': true},
     {'1': 'style', '3': 7, '4': 1, '5': 3, '9': 4, '10': 'style', '17': true},
-    {
-      '1': 'path',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path',
-      '9': 5,
-      '10': 'path',
-      '17': true
-    },
+    {'1': 'path', '3': 8, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path', '9': 5, '10': 'path', '17': true},
     {
       '1': 'type',
       '3': 1,
@@ -2624,15 +1349,7 @@ const PathEffect$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathEffectType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 4, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathEffectType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2659,122 +1376,20 @@ final $typed_data.Uint8List pathEffectDescriptor = $convert.base64Decode(
 const Paint$json = {
   '1': 'Paint',
   '2': [
-    {
-      '1': 'color',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 0,
-      '10': 'color',
-      '17': true
-    },
+    {'1': 'color', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 0, '10': 'color', '17': true},
     {'1': 'style', '3': 2, '4': 1, '5': 1, '9': 1, '10': 'style', '17': true},
-    {
-      '1': 'blend_mode',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '9': 2,
-      '10': 'blendMode',
-      '17': true
-    },
-    {
-      '1': 'stroke_cap',
-      '3': 4,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'strokeCap',
-      '17': true
-    },
-    {
-      '1': 'stroke_join',
-      '3': 5,
-      '4': 1,
-      '5': 1,
-      '9': 4,
-      '10': 'strokeJoin',
-      '17': true
-    },
-    {
-      '1': 'stroke_width',
-      '3': 6,
-      '4': 1,
-      '5': 2,
-      '9': 5,
-      '10': 'strokeWidth',
-      '17': true
-    },
-    {
-      '1': 'stroke_miter',
-      '3': 7,
-      '4': 1,
-      '5': 2,
-      '9': 6,
-      '10': 'strokeMiter',
-      '17': true
-    },
-    {
-      '1': 'anti_alias',
-      '3': 8,
-      '4': 1,
-      '5': 8,
-      '9': 7,
-      '10': 'antiAlias',
-      '17': true
-    },
+    {'1': 'blend_mode', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'blendMode', '17': true},
+    {'1': 'stroke_cap', '3': 4, '4': 1, '5': 1, '9': 3, '10': 'strokeCap', '17': true},
+    {'1': 'stroke_join', '3': 5, '4': 1, '5': 1, '9': 4, '10': 'strokeJoin', '17': true},
+    {'1': 'stroke_width', '3': 6, '4': 1, '5': 2, '9': 5, '10': 'strokeWidth', '17': true},
+    {'1': 'stroke_miter', '3': 7, '4': 1, '5': 2, '9': 6, '10': 'strokeMiter', '17': true},
+    {'1': 'anti_alias', '3': 8, '4': 1, '5': 8, '9': 7, '10': 'antiAlias', '17': true},
     {'1': 'dither', '3': 9, '4': 1, '5': 8, '9': 8, '10': 'dither', '17': true},
-    {
-      '1': 'color_filter',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ColorFilter',
-      '9': 9,
-      '10': 'colorFilter',
-      '17': true
-    },
-    {
-      '1': 'mask_filter',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.MaskFilter',
-      '9': 10,
-      '10': 'maskFilter',
-      '17': true
-    },
-    {
-      '1': 'shader',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Shader',
-      '9': 11,
-      '10': 'shader',
-      '17': true
-    },
-    {
-      '1': 'looper',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Looper',
-      '9': 12,
-      '10': 'looper',
-      '17': true
-    },
-    {
-      '1': 'path_effect',
-      '3': 14,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathEffect',
-      '9': 13,
-      '10': 'pathEffect',
-      '17': true
-    },
+    {'1': 'color_filter', '3': 10, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ColorFilter', '9': 9, '10': 'colorFilter', '17': true},
+    {'1': 'mask_filter', '3': 11, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.MaskFilter', '9': 10, '10': 'maskFilter', '17': true},
+    {'1': 'shader', '3': 12, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Shader', '9': 11, '10': 'shader', '17': true},
+    {'1': 'looper', '3': 13, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Looper', '9': 12, '10': 'looper', '17': true},
+    {'1': 'path_effect', '3': 14, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathEffect', '9': 13, '10': 'pathEffect', '17': true},
   ],
   '8': [
     {'1': '_color'},
@@ -2821,25 +1436,8 @@ final $typed_data.Uint8List paintDescriptor = $convert.base64Decode(
 const PathVerb$json = {
   '1': 'PathVerb',
   '2': [
-    {
-      '1': 'r_rect',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'rRect',
-      '17': true
-    },
-    {
-      '1': 'is_c_c_w',
-      '3': 3,
-      '4': 1,
-      '5': 8,
-      '9': 2,
-      '10': 'isCCW',
-      '17': true
-    },
+    {'1': 'r_rect', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'rRect', '17': true},
+    {'1': 'is_c_c_w', '3': 3, '4': 1, '5': 8, '9': 2, '10': 'isCCW', '17': true},
     {'1': 'x1', '3': 4, '4': 1, '5': 2, '9': 3, '10': 'x1', '17': true},
     {'1': 'y1', '3': 5, '4': 1, '5': 2, '9': 4, '10': 'y1', '17': true},
     {'1': 'x2', '3': 6, '4': 1, '5': 2, '9': 5, '10': 'x2', '17': true},
@@ -2860,15 +1458,7 @@ const PathVerb$json = {
       '9': 0,
       '10': 'type',
     },
-    {
-      '1': 'typeEnum',
-      '3': 15,
-      '4': 1,
-      '5': 14,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathVerbType',
-      '9': 0,
-      '10': 'typeEnum'
-    },
+    {'1': 'typeEnum', '3': 15, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathVerbType', '9': 0, '10': 'typeEnum'},
   ],
   '8': [
     {'1': 'typeOneOf'},
@@ -2907,23 +1497,8 @@ final $typed_data.Uint8List pathVerbDescriptor = $convert.base64Decode(
 const Path$json = {
   '1': 'Path',
   '2': [
-    {
-      '1': 'fill_type',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'fillType',
-      '17': true
-    },
-    {
-      '1': 'verbs',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathVerb',
-      '10': 'verbs'
-    },
+    {'1': 'fill_type', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'fillType', '17': true},
+    {'1': 'verbs', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.PathVerb', '10': 'verbs'},
   ],
   '8': [
     {'1': '_fill_type'},
@@ -2942,111 +1517,24 @@ const ViewNode$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'id', '17': true},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'type', '17': true},
-    {
-      '1': 'render_node_id',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '9': 2,
-      '10': 'renderNodeId',
-      '17': true
-    },
+    {'1': 'render_node_id', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'renderNodeId', '17': true},
     {'1': 'x', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'x', '17': true},
     {'1': 'y', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'y', '17': true},
     {'1': 'width', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'width', '17': true},
     {'1': 'height', '3': 7, '4': 1, '5': 5, '9': 6, '10': 'height', '17': true},
     {'1': 'view_x', '3': 8, '4': 1, '5': 5, '9': 7, '10': 'viewX', '17': true},
     {'1': 'view_y', '3': 9, '4': 1, '5': 5, '9': 8, '10': 'viewY', '17': true},
-    {
-      '1': 'view_width',
-      '3': 10,
-      '4': 1,
-      '5': 5,
-      '9': 9,
-      '10': 'viewWidth',
-      '17': true
-    },
-    {
-      '1': 'view_height',
-      '3': 11,
-      '4': 1,
-      '5': 5,
-      '9': 10,
-      '10': 'viewHeight',
-      '17': true
-    },
-    {
-      '1': 'visible',
-      '3': 12,
-      '4': 1,
-      '5': 8,
-      '9': 11,
-      '10': 'visible',
-      '17': true
-    },
-    {
-      '1': 'clickable',
-      '3': 13,
-      '4': 1,
-      '5': 8,
-      '9': 12,
-      '10': 'clickable',
-      '17': true
-    },
-    {
-      '1': 'ignore_clicks',
-      '3': 14,
-      '4': 1,
-      '5': 8,
-      '9': 13,
-      '10': 'ignoreClicks',
-      '17': true
-    },
-    {
-      '1': 'is_web_view',
-      '3': 15,
-      '4': 1,
-      '5': 8,
-      '9': 14,
-      '10': 'isWebView',
-      '17': true
-    },
-    {
-      '1': 'backgroundColor',
-      '3': 16,
-      '4': 1,
-      '5': 5,
-      '9': 15,
-      '10': 'backgroundColor',
-      '17': true
-    },
-    {
-      '1': 'children',
-      '3': 17,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNode',
-      '10': 'children'
-    },
-    {
-      '1': 'is_masked',
-      '3': 18,
-      '4': 1,
-      '5': 8,
-      '9': 16,
-      '10': 'isMasked',
-      '17': true
-    },
+    {'1': 'view_width', '3': 10, '4': 1, '5': 5, '9': 9, '10': 'viewWidth', '17': true},
+    {'1': 'view_height', '3': 11, '4': 1, '5': 5, '9': 10, '10': 'viewHeight', '17': true},
+    {'1': 'visible', '3': 12, '4': 1, '5': 8, '9': 11, '10': 'visible', '17': true},
+    {'1': 'clickable', '3': 13, '4': 1, '5': 8, '9': 12, '10': 'clickable', '17': true},
+    {'1': 'ignore_clicks', '3': 14, '4': 1, '5': 8, '9': 13, '10': 'ignoreClicks', '17': true},
+    {'1': 'is_web_view', '3': 15, '4': 1, '5': 8, '9': 14, '10': 'isWebView', '17': true},
+    {'1': 'backgroundColor', '3': 16, '4': 1, '5': 5, '9': 15, '10': 'backgroundColor', '17': true},
+    {'1': 'children', '3': 17, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNode', '10': 'children'},
+    {'1': 'is_masked', '3': 18, '4': 1, '5': 8, '9': 16, '10': 'isMasked', '17': true},
     {'1': 'text', '3': 19, '4': 1, '5': 9, '9': 17, '10': 'text', '17': true},
-    {
-      '1': 'id_entry_name',
-      '3': 20,
-      '4': 1,
-      '5': 9,
-      '9': 18,
-      '10': 'idEntryName',
-      '17': true
-    },
+    {'1': 'id_entry_name', '3': 20, '4': 1, '5': 9, '9': 18, '10': 'idEntryName', '17': true},
   ],
   '8': [
     {'1': '_id'},
@@ -3098,120 +1586,25 @@ const ViewNodeDelta$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'id', '17': true},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'type', '17': true},
-    {
-      '1': 'render_node_id',
-      '3': 3,
-      '4': 1,
-      '5': 1,
-      '9': 2,
-      '10': 'renderNodeId',
-      '17': true
-    },
+    {'1': 'render_node_id', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'renderNodeId', '17': true},
     {'1': 'x', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'x', '17': true},
     {'1': 'y', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'y', '17': true},
     {'1': 'width', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'width', '17': true},
     {'1': 'height', '3': 7, '4': 1, '5': 5, '9': 6, '10': 'height', '17': true},
     {'1': 'view_x', '3': 8, '4': 1, '5': 5, '9': 7, '10': 'viewX', '17': true},
     {'1': 'view_y', '3': 9, '4': 1, '5': 5, '9': 8, '10': 'viewY', '17': true},
-    {
-      '1': 'view_width',
-      '3': 10,
-      '4': 1,
-      '5': 5,
-      '9': 9,
-      '10': 'viewWidth',
-      '17': true
-    },
-    {
-      '1': 'view_height',
-      '3': 11,
-      '4': 1,
-      '5': 5,
-      '9': 10,
-      '10': 'viewHeight',
-      '17': true
-    },
-    {
-      '1': 'visible',
-      '3': 12,
-      '4': 1,
-      '5': 8,
-      '9': 11,
-      '10': 'visible',
-      '17': true
-    },
-    {
-      '1': 'clickable',
-      '3': 13,
-      '4': 1,
-      '5': 8,
-      '9': 12,
-      '10': 'clickable',
-      '17': true
-    },
-    {
-      '1': 'ignore_clicks',
-      '3': 14,
-      '4': 1,
-      '5': 8,
-      '9': 13,
-      '10': 'ignoreClicks',
-      '17': true
-    },
-    {
-      '1': 'is_web_view',
-      '3': 15,
-      '4': 1,
-      '5': 8,
-      '9': 14,
-      '10': 'isWebView',
-      '17': true
-    },
-    {
-      '1': 'backgroundColor',
-      '3': 16,
-      '4': 1,
-      '5': 5,
-      '9': 15,
-      '10': 'backgroundColor',
-      '17': true
-    },
-    {
-      '1': 'children',
-      '3': 17,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNodeDelta',
-      '10': 'children'
-    },
-    {
-      '1': 'is_masked',
-      '3': 18,
-      '4': 1,
-      '5': 8,
-      '9': 16,
-      '10': 'isMasked',
-      '17': true
-    },
+    {'1': 'view_width', '3': 10, '4': 1, '5': 5, '9': 9, '10': 'viewWidth', '17': true},
+    {'1': 'view_height', '3': 11, '4': 1, '5': 5, '9': 10, '10': 'viewHeight', '17': true},
+    {'1': 'visible', '3': 12, '4': 1, '5': 8, '9': 11, '10': 'visible', '17': true},
+    {'1': 'clickable', '3': 13, '4': 1, '5': 8, '9': 12, '10': 'clickable', '17': true},
+    {'1': 'ignore_clicks', '3': 14, '4': 1, '5': 8, '9': 13, '10': 'ignoreClicks', '17': true},
+    {'1': 'is_web_view', '3': 15, '4': 1, '5': 8, '9': 14, '10': 'isWebView', '17': true},
+    {'1': 'backgroundColor', '3': 16, '4': 1, '5': 5, '9': 15, '10': 'backgroundColor', '17': true},
+    {'1': 'children', '3': 17, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNodeDelta', '10': 'children'},
+    {'1': 'is_masked', '3': 18, '4': 1, '5': 8, '9': 16, '10': 'isMasked', '17': true},
     {'1': 'text', '3': 19, '4': 1, '5': 9, '9': 17, '10': 'text', '17': true},
-    {
-      '1': 'id_entry_name',
-      '3': 20,
-      '4': 1,
-      '5': 9,
-      '9': 18,
-      '10': 'idEntryName',
-      '17': true
-    },
-    {
-      '1': 'is_backgroundColor_set',
-      '3': 21,
-      '4': 1,
-      '5': 8,
-      '9': 19,
-      '10': 'isBackgroundColorSet',
-      '17': true
-    },
+    {'1': 'id_entry_name', '3': 20, '4': 1, '5': 9, '9': 18, '10': 'idEntryName', '17': true},
+    {'1': 'is_backgroundColor_set', '3': 21, '4': 1, '5': 8, '9': 19, '10': 'isBackgroundColorSet', '17': true},
   ],
   '8': [
     {'1': '_id'},
@@ -3263,42 +1656,10 @@ final $typed_data.Uint8List viewNodeDeltaDescriptor = $convert.base64Decode(
 const ViewHierarchy$json = {
   '1': 'ViewHierarchy',
   '2': [
-    {
-      '1': 'timestamp',
-      '3': 1,
-      '4': 1,
-      '5': 1,
-      '9': 0,
-      '10': 'timestamp',
-      '17': true
-    },
-    {
-      '1': 'root',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNode',
-      '9': 1,
-      '10': 'root',
-      '17': true
-    },
-    {
-      '1': 'visible_fragments',
-      '3': 3,
-      '4': 3,
-      '5': 9,
-      '10': 'visibleFragments'
-    },
-    {
-      '1': 'rootDelta',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNodeDelta',
-      '9': 2,
-      '10': 'rootDelta',
-      '17': true
-    },
+    {'1': 'timestamp', '3': 1, '4': 1, '5': 1, '9': 0, '10': 'timestamp', '17': true},
+    {'1': 'root', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNode', '9': 1, '10': 'root', '17': true},
+    {'1': 'visible_fragments', '3': 3, '4': 3, '5': 9, '10': 'visibleFragments'},
+    {'1': 'rootDelta', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewNodeDelta', '9': 2, '10': 'rootDelta', '17': true},
   ],
   '8': [
     {'1': '_timestamp'},
@@ -3320,152 +1681,23 @@ final $typed_data.Uint8List viewHierarchyDescriptor = $convert.base64Decode(
 const DisplayFrame$json = {
   '1': 'DisplayFrame',
   '2': [
-    {
-      '1': 'commands',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommand',
-      '10': 'commands'
-    },
-    {
-      '1': 'typefaces',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Typeface',
-      '10': 'typefaces'
-    },
-    {
-      '1': 'images',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Image',
-      '10': 'images'
-    },
-    {
-      '1': 'text_blobs',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlob',
-      '10': 'textBlobs'
-    },
-    {
-      '1': 'vertices',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Vertices',
-      '10': 'vertices'
-    },
-    {
-      '1': 'paints',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint',
-      '10': 'paints'
-    },
-    {
-      '1': 'paths',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path',
-      '10': 'paths'
-    },
-    {
-      '1': 'sub_pictures',
-      '3': 8,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayFrame',
-      '10': 'subPictures'
-    },
-    {
-      '1': 'view_hierarchy',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewHierarchy',
-      '9': 0,
-      '10': 'viewHierarchy',
-      '17': true
-    },
-    {
-      '1': 'timestamp',
-      '3': 10,
-      '4': 1,
-      '5': 1,
-      '9': 1,
-      '10': 'timestamp',
-      '17': true
-    },
-    {
-      '1': 'activity_name',
-      '3': 11,
-      '4': 1,
-      '5': 9,
-      '9': 2,
-      '10': 'activityName',
-      '17': true
-    },
-    {
-      '1': 'activity_id',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'activityId',
-      '17': true
-    },
-    {
-      '1': 'screen_width',
-      '3': 13,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'screenWidth',
-      '17': true
-    },
-    {
-      '1': 'screen_height',
-      '3': 14,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'screenHeight',
-      '17': true
-    },
-    {
-      '1': 'density',
-      '3': 15,
-      '4': 1,
-      '5': 2,
-      '9': 6,
-      '10': 'density',
-      '17': true
-    },
-    {
-      '1': 'keyboard_height',
-      '3': 16,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'keyboardHeight',
-      '17': true
-    },
-    {
-      '1': 'system_background_color',
-      '3': 17,
-      '4': 1,
-      '5': 5,
-      '9': 8,
-      '10': 'systemBackgroundColor',
-      '17': true
-    },
+    {'1': 'commands', '3': 1, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommand', '10': 'commands'},
+    {'1': 'typefaces', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Typeface', '10': 'typefaces'},
+    {'1': 'images', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Image', '10': 'images'},
+    {'1': 'text_blobs', '3': 4, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlob', '10': 'textBlobs'},
+    {'1': 'vertices', '3': 5, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Vertices', '10': 'vertices'},
+    {'1': 'paints', '3': 6, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint', '10': 'paints'},
+    {'1': 'paths', '3': 7, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path', '10': 'paths'},
+    {'1': 'sub_pictures', '3': 8, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayFrame', '10': 'subPictures'},
+    {'1': 'view_hierarchy', '3': 9, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewHierarchy', '9': 0, '10': 'viewHierarchy', '17': true},
+    {'1': 'timestamp', '3': 10, '4': 1, '5': 1, '9': 1, '10': 'timestamp', '17': true},
+    {'1': 'activity_name', '3': 11, '4': 1, '5': 9, '9': 2, '10': 'activityName', '17': true},
+    {'1': 'activity_id', '3': 12, '4': 1, '5': 5, '9': 3, '10': 'activityId', '17': true},
+    {'1': 'screen_width', '3': 13, '4': 1, '5': 5, '9': 4, '10': 'screenWidth', '17': true},
+    {'1': 'screen_height', '3': 14, '4': 1, '5': 5, '9': 5, '10': 'screenHeight', '17': true},
+    {'1': 'density', '3': 15, '4': 1, '5': 2, '9': 6, '10': 'density', '17': true},
+    {'1': 'keyboard_height', '3': 16, '4': 1, '5': 5, '9': 7, '10': 'keyboardHeight', '17': true},
+    {'1': 'system_background_color', '3': 17, '4': 1, '5': 5, '9': 8, '10': 'systemBackgroundColor', '17': true},
   ],
   '8': [
     {'1': '_view_hierarchy'},
@@ -3512,25 +1744,8 @@ const ClipRectCommandPayload$json = {
   '1': 'ClipRectCommandPayload',
   '2': [
     {'1': 'op', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'op', '17': true},
-    {
-      '1': 'anti_alias',
-      '3': 2,
-      '4': 1,
-      '5': 8,
-      '9': 1,
-      '10': 'antiAlias',
-      '17': true
-    },
-    {
-      '1': 'rect',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 2,
-      '10': 'rect',
-      '17': true
-    },
+    {'1': 'anti_alias', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'antiAlias', '17': true},
+    {'1': 'rect', '3': 3, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 2, '10': 'rect', '17': true},
   ],
   '8': [
     {'1': '_op'},
@@ -3555,9 +1770,8 @@ const ConcatCommandPayload$json = {
 };
 
 /// Descriptor for `ConcatCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List concatCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChRDb25jYXRDb21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAJSBm1hdHJpeA==');
+final $typed_data.Uint8List concatCommandPayloadDescriptor = $convert.base64Decode(
+    'ChRDb25jYXRDb21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAJSBm1hdHJpeA==');
 
 @$core.Deprecated('Use concat44CommandPayloadDescriptor instead')
 const Concat44CommandPayload$json = {
@@ -3568,60 +1782,18 @@ const Concat44CommandPayload$json = {
 };
 
 /// Descriptor for `Concat44CommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List concat44CommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChZDb25jYXQ0NENvbW1hbmRQYXlsb2FkEhYKBm1hdHJpeBgBIAMoAlIGbWF0cml4');
+final $typed_data.Uint8List concat44CommandPayloadDescriptor = $convert.base64Decode(
+    'ChZDb25jYXQ0NENvbW1hbmRQYXlsb2FkEhYKBm1hdHJpeBgBIAMoAlIGbWF0cml4');
 
 @$core.Deprecated('Use drawArcCommandPayloadDescriptor instead')
 const DrawArcCommandPayload$json = {
   '1': 'DrawArcCommandPayload',
   '2': [
-    {
-      '1': 'rect',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'rect',
-      '17': true
-    },
-    {
-      '1': 'start_angle',
-      '3': 2,
-      '4': 1,
-      '5': 2,
-      '9': 1,
-      '10': 'startAngle',
-      '17': true
-    },
-    {
-      '1': 'sweep_angle',
-      '3': 3,
-      '4': 1,
-      '5': 2,
-      '9': 2,
-      '10': 'sweepAngle',
-      '17': true
-    },
-    {
-      '1': 'use_center',
-      '3': 4,
-      '4': 1,
-      '5': 8,
-      '9': 3,
-      '10': 'useCenter',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'rect', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'rect', '17': true},
+    {'1': 'start_angle', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'startAngle', '17': true},
+    {'1': 'sweep_angle', '3': 3, '4': 1, '5': 2, '9': 2, '10': 'sweepAngle', '17': true},
+    {'1': 'use_center', '3': 4, '4': 1, '5': 8, '9': 3, '10': 'useCenter', '17': true},
+    {'1': 'paint_index', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_rect'},
@@ -3645,15 +1817,7 @@ final $typed_data.Uint8List drawArcCommandPayloadDescriptor = $convert.base64Dec
 const DrawBehindPaintCommandPayload$json = {
   '1': 'DrawBehindPaintCommandPayload',
   '2': [
-    {
-      '1': 'paint_index',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'paint_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_paint_index'},
@@ -3661,44 +1825,17 @@ const DrawBehindPaintCommandPayload$json = {
 };
 
 /// Descriptor for `DrawBehindPaintCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List drawBehindPaintCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'Ch1EcmF3QmVoaW5kUGFpbnRDb21tYW5kUGF5bG9hZBIkCgtwYWludF9pbmRleBgBIAEoBUgAUg'
-        'pwYWludEluZGV4iAEBQg4KDF9wYWludF9pbmRleA==');
+final $typed_data.Uint8List drawBehindPaintCommandPayloadDescriptor = $convert.base64Decode(
+    'Ch1EcmF3QmVoaW5kUGFpbnRDb21tYW5kUGF5bG9hZBIkCgtwYWludF9pbmRleBgBIAEoBUgAUg'
+    'pwYWludEluZGV4iAEBQg4KDF9wYWludF9pbmRleA==');
 
 @$core.Deprecated('Use drawDRRectCommandPayloadDescriptor instead')
 const DrawDRRectCommandPayload$json = {
   '1': 'DrawDRRectCommandPayload',
   '2': [
-    {
-      '1': 'outer',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'outer',
-      '17': true
-    },
-    {
-      '1': 'inner',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'inner',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'outer', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'outer', '17': true},
+    {'1': 'inner', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'inner', '17': true},
+    {'1': 'paint_index', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_outer'},
@@ -3721,62 +1858,12 @@ const DrawImageCommandPayload$json = {
   '2': [
     {'1': 'x', '3': 1, '4': 1, '5': 2, '9': 0, '10': 'x', '17': true},
     {'1': 'y', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'y', '17': true},
-    {
-      '1': 'image_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'sampling',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling',
-      '9': 3,
-      '10': 'sampling',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 6,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'image_index', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'imageIndex', '17': true},
+    {'1': 'sampling', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling', '9': 3, '10': 'sampling', '17': true},
+    {'1': 'masked_width', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 7, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 6, '10': 'maskedColor', '17': true},
+    {'1': 'paint_index', '3': 8, '4': 1, '5': 5, '9': 7, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_x'},
@@ -3807,81 +1894,14 @@ final $typed_data.Uint8List drawImageCommandPayloadDescriptor = $convert.base64D
 const DrawImageLatticeCommandPayload$json = {
   '1': 'DrawImageLatticeCommandPayload',
   '2': [
-    {
-      '1': 'lattice',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Lattice',
-      '9': 0,
-      '10': 'lattice',
-      '17': true
-    },
-    {
-      '1': 'dst',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'dst',
-      '17': true
-    },
-    {
-      '1': 'image_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'filter_mode',
-      '3': 4,
-      '4': 1,
-      '5': 1,
-      '9': 3,
-      '10': 'filterMode',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 6,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 8,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'lattice', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Lattice', '9': 0, '10': 'lattice', '17': true},
+    {'1': 'dst', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'dst', '17': true},
+    {'1': 'image_index', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'imageIndex', '17': true},
+    {'1': 'filter_mode', '3': 4, '4': 1, '5': 1, '9': 3, '10': 'filterMode', '17': true},
+    {'1': 'masked_width', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 7, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 6, '10': 'maskedColor', '17': true},
+    {'1': 'paint_index', '3': 8, '4': 1, '5': 5, '9': 7, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_lattice'},
@@ -3914,72 +1934,13 @@ final $typed_data.Uint8List drawImageLatticeCommandPayloadDescriptor = $convert.
 const DrawImageNineCommandPayload$json = {
   '1': 'DrawImageNineCommandPayload',
   '2': [
-    {
-      '1': 'center',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'center',
-      '17': true
-    },
-    {
-      '1': 'dst',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'dst',
-      '17': true
-    },
-    {
-      '1': 'image_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 5,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 7,
-      '4': 1,
-      '5': 5,
-      '9': 6,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'center', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'center', '17': true},
+    {'1': 'dst', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'dst', '17': true},
+    {'1': 'image_index', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'imageIndex', '17': true},
+    {'1': 'masked_width', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 5, '4': 1, '5': 5, '9': 4, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 5, '10': 'maskedColor', '17': true},
+    {'1': 'paint_index', '3': 7, '4': 1, '5': 5, '9': 6, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_center'},
@@ -4010,91 +1971,15 @@ final $typed_data.Uint8List drawImageNineCommandPayloadDescriptor = $convert.bas
 const DrawImageRectCommandPayload$json = {
   '1': 'DrawImageRectCommandPayload',
   '2': [
-    {
-      '1': 'src',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'src',
-      '17': true
-    },
-    {
-      '1': 'dst',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'dst',
-      '17': true
-    },
-    {
-      '1': 'constraint',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'constraint',
-      '17': true
-    },
-    {
-      '1': 'image_index',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'sampling',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling',
-      '9': 4,
-      '10': 'sampling',
-      '17': true
-    },
-    {
-      '1': 'masked_width',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'maskedWidth',
-      '17': true
-    },
-    {
-      '1': 'masked_height',
-      '3': 7,
-      '4': 1,
-      '5': 5,
-      '9': 6,
-      '10': 'maskedHeight',
-      '17': true
-    },
-    {
-      '1': 'masked_color',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 7,
-      '10': 'maskedColor',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 9,
-      '4': 1,
-      '5': 5,
-      '9': 8,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'src', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'src', '17': true},
+    {'1': 'dst', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'dst', '17': true},
+    {'1': 'constraint', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'constraint', '17': true},
+    {'1': 'image_index', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'imageIndex', '17': true},
+    {'1': 'sampling', '3': 5, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Sampling', '9': 4, '10': 'sampling', '17': true},
+    {'1': 'masked_width', '3': 6, '4': 1, '5': 5, '9': 5, '10': 'maskedWidth', '17': true},
+    {'1': 'masked_height', '3': 7, '4': 1, '5': 5, '9': 6, '10': 'maskedHeight', '17': true},
+    {'1': 'masked_color', '3': 8, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 7, '10': 'maskedColor', '17': true},
+    {'1': 'paint_index', '3': 9, '4': 1, '5': 5, '9': 8, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_src'},
@@ -4129,15 +2014,7 @@ final $typed_data.Uint8List drawImageRectCommandPayloadDescriptor = $convert.bas
 const DrawPaintCommandPayload$json = {
   '1': 'DrawPaintCommandPayload',
   '2': [
-    {
-      '1': 'paint_index',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'paint_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_paint_index'},
@@ -4145,33 +2022,16 @@ const DrawPaintCommandPayload$json = {
 };
 
 /// Descriptor for `DrawPaintCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List drawPaintCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChdEcmF3UGFpbnRDb21tYW5kUGF5bG9hZBIkCgtwYWludF9pbmRleBgBIAEoBUgAUgpwYWludE'
-        'luZGV4iAEBQg4KDF9wYWludF9pbmRleA==');
+final $typed_data.Uint8List drawPaintCommandPayloadDescriptor = $convert.base64Decode(
+    'ChdEcmF3UGFpbnRDb21tYW5kUGF5bG9hZBIkCgtwYWludF9pbmRleBgBIAEoBUgAUgpwYWludE'
+    'luZGV4iAEBQg4KDF9wYWludF9pbmRleA==');
 
 @$core.Deprecated('Use drawPathCommandPayloadDescriptor instead')
 const DrawPathCommandPayload$json = {
   '1': 'DrawPathCommandPayload',
   '2': [
-    {
-      '1': 'path_index',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'pathIndex',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'path_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'pathIndex', '17': true},
+    {'1': 'paint_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_path_index'},
@@ -4189,25 +2049,8 @@ final $typed_data.Uint8List drawPathCommandPayloadDescriptor = $convert.base64De
 const DrawRectCommandPayload$json = {
   '1': 'DrawRectCommandPayload',
   '2': [
-    {
-      '1': 'rect',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'rect',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'rect', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'rect', '17': true},
+    {'1': 'paint_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_rect'},
@@ -4236,34 +2079,16 @@ const TranslateCommandPayload$json = {
 };
 
 /// Descriptor for `TranslateCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List translateCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChdUcmFuc2xhdGVDb21tYW5kUGF5bG9hZBIXCgRsZWZ0GAEgASgCSABSBGxlZnSIAQESFQoDdG'
-        '9wGAIgASgCSAFSA3RvcIgBAUIHCgVfbGVmdEIGCgRfdG9w');
+final $typed_data.Uint8List translateCommandPayloadDescriptor = $convert.base64Decode(
+    'ChdUcmFuc2xhdGVDb21tYW5kUGF5bG9hZBIXCgRsZWZ0GAEgASgCSABSBGxlZnSIAQESFQoDdG'
+    '9wGAIgASgCSAFSA3RvcIgBAUIHCgVfbGVmdEIGCgRfdG9w');
 
 @$core.Deprecated('Use drawOvalCommandPayloadDescriptor instead')
 const DrawOvalCommandPayload$json = {
   '1': 'DrawOvalCommandPayload',
   '2': [
-    {
-      '1': 'rect',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'rect',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'rect', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'rect', '17': true},
+    {'1': 'paint_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_rect'},
@@ -4282,32 +2107,9 @@ final $typed_data.Uint8List drawOvalCommandPayloadDescriptor = $convert.base64De
 const DrawPointsCommandPayload$json = {
   '1': 'DrawPointsCommandPayload',
   '2': [
-    {
-      '1': 'point_mode',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'pointMode',
-      '17': true
-    },
-    {
-      '1': 'points',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '10': 'points'
-    },
-    {
-      '1': 'paint_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'point_mode', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'pointMode', '17': true},
+    {'1': 'points', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '10': 'points'},
+    {'1': 'paint_index', '3': 3, '4': 1, '5': 5, '9': 1, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_point_mode'},
@@ -4326,25 +2128,8 @@ final $typed_data.Uint8List drawPointsCommandPayloadDescriptor = $convert.base64
 const DrawRRectCommandPayload$json = {
   '1': 'DrawRRectCommandPayload',
   '2': [
-    {
-      '1': 'rrect',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'rrect',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'rrect', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'rrect', '17': true},
+    {'1': 'paint_index', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_rrect'},
@@ -4363,26 +2148,10 @@ final $typed_data.Uint8List drawRRectCommandPayloadDescriptor = $convert.base64D
 const DrawTextBlobCommandPayload$json = {
   '1': 'DrawTextBlobCommandPayload',
   '2': [
-    {
-      '1': 'blob_index',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'blobIndex',
-      '17': true
-    },
+    {'1': 'blob_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'blobIndex', '17': true},
     {'1': 'x', '3': 2, '4': 1, '5': 2, '9': 1, '10': 'x', '17': true},
     {'1': 'y', '3': 3, '4': 1, '5': 2, '9': 2, '10': 'y', '17': true},
-    {
-      '1': 'paint_index',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'paint_index', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_blob_index'},
@@ -4403,33 +2172,10 @@ final $typed_data.Uint8List drawTextBlobCommandPayloadDescriptor = $convert.base
 const DrawVerticesCommandPayload$json = {
   '1': 'DrawVerticesCommandPayload',
   '2': [
-    {
-      '1': 'vertices_index',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'verticesIndex',
-      '17': true
-    },
+    {'1': 'vertices_index', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'verticesIndex', '17': true},
     {'1': 'mode', '3': 2, '4': 1, '5': 1, '9': 1, '10': 'mode', '17': true},
-    {
-      '1': 'bones',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList',
-      '10': 'bones'
-    },
-    {
-      '1': 'paint_index',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'bones', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FloatList', '10': 'bones'},
+    {'1': 'paint_index', '3': 4, '4': 1, '5': 5, '9': 2, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_vertices_index'},
@@ -4452,8 +2198,8 @@ const SaveCommandPayload$json = {
 };
 
 /// Descriptor for `SaveCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List saveCommandPayloadDescriptor =
-    $convert.base64Decode('ChJTYXZlQ29tbWFuZFBheWxvYWQ=');
+final $typed_data.Uint8List saveCommandPayloadDescriptor = $convert.base64Decode(
+    'ChJTYXZlQ29tbWFuZFBheWxvYWQ=');
 
 @$core.Deprecated('Use restoreCommandPayloadDescriptor instead')
 const RestoreCommandPayload$json = {
@@ -4461,24 +2207,15 @@ const RestoreCommandPayload$json = {
 };
 
 /// Descriptor for `RestoreCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List restoreCommandPayloadDescriptor =
-    $convert.base64Decode('ChVSZXN0b3JlQ29tbWFuZFBheWxvYWQ=');
+final $typed_data.Uint8List restoreCommandPayloadDescriptor = $convert.base64Decode(
+    'ChVSZXN0b3JlQ29tbWFuZFBheWxvYWQ=');
 
 @$core.Deprecated('Use saveBehindCommandPayloadDescriptor instead')
 const SaveBehindCommandPayload$json = {
   '1': 'SaveBehindCommandPayload',
   '2': [
     {'1': 'flags', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'flags', '17': true},
-    {
-      '1': 'subset',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 1,
-      '10': 'subset',
-      '17': true
-    },
+    {'1': 'subset', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 1, '10': 'subset', '17': true},
   ],
   '8': [
     {'1': '_flags'},
@@ -4496,35 +2233,10 @@ final $typed_data.Uint8List saveBehindCommandPayloadDescriptor = $convert.base64
 const SaveLayerCommandPayload$json = {
   '1': 'SaveLayerCommandPayload',
   '2': [
-    {
-      '1': 'bounds',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 0,
-      '10': 'bounds',
-      '17': true
-    },
+    {'1': 'bounds', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 0, '10': 'bounds', '17': true},
     {'1': 'flags', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'flags', '17': true},
-    {
-      '1': 'image_filter_paint',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'imageFilterPaint',
-      '17': true
-    },
-    {
-      '1': 'paint_index',
-      '3': 4,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'paintIndex',
-      '17': true
-    },
+    {'1': 'image_filter_paint', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'imageFilterPaint', '17': true},
+    {'1': 'paint_index', '3': 4, '4': 1, '5': 5, '9': 3, '10': 'paintIndex', '17': true},
   ],
   '8': [
     {'1': '_bounds'},
@@ -4570,9 +2282,8 @@ const SetMatrixCommandPayload$json = {
 };
 
 /// Descriptor for `SetMatrixCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List setMatrixCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChdTZXRNYXRyaXhDb21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAJSBm1hdHJpeA==');
+final $typed_data.Uint8List setMatrixCommandPayloadDescriptor = $convert.base64Decode(
+    'ChdTZXRNYXRyaXhDb21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAJSBm1hdHJpeA==');
 
 @$core.Deprecated('Use setMatrix44CommandPayloadDescriptor instead')
 const SetMatrix44CommandPayload$json = {
@@ -4583,33 +2294,16 @@ const SetMatrix44CommandPayload$json = {
 };
 
 /// Descriptor for `SetMatrix44CommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List setMatrix44CommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChlTZXRNYXRyaXg0NENvbW1hbmRQYXlsb2FkEhYKBm1hdHJpeBgBIAMoAlIGbWF0cml4');
+final $typed_data.Uint8List setMatrix44CommandPayloadDescriptor = $convert.base64Decode(
+    'ChlTZXRNYXRyaXg0NENvbW1hbmRQYXlsb2FkEhYKBm1hdHJpeBgBIAMoAlIGbWF0cml4');
 
 @$core.Deprecated('Use clipPathCommandPayloadDescriptor instead')
 const ClipPathCommandPayload$json = {
   '1': 'ClipPathCommandPayload',
   '2': [
     {'1': 'op', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'op', '17': true},
-    {
-      '1': 'anti_alias',
-      '3': 2,
-      '4': 1,
-      '5': 8,
-      '9': 1,
-      '10': 'antiAlias',
-      '17': true
-    },
-    {
-      '1': 'path_index',
-      '3': 3,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'pathIndex',
-      '17': true
-    },
+    {'1': 'anti_alias', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'antiAlias', '17': true},
+    {'1': 'path_index', '3': 3, '4': 1, '5': 5, '9': 2, '10': 'pathIndex', '17': true},
   ],
   '8': [
     {'1': '_op'},
@@ -4629,25 +2323,8 @@ const ClipRRectCommandPayload$json = {
   '1': 'ClipRRectCommandPayload',
   '2': [
     {'1': 'op', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'op', '17': true},
-    {
-      '1': 'anti_alias',
-      '3': 2,
-      '4': 1,
-      '5': 8,
-      '9': 1,
-      '10': 'antiAlias',
-      '17': true
-    },
-    {
-      '1': 'rrect',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '9': 2,
-      '10': 'rrect',
-      '17': true
-    },
+    {'1': 'anti_alias', '3': 2, '4': 1, '5': 8, '9': 1, '10': 'antiAlias', '17': true},
+    {'1': 'rrect', '3': 3, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '9': 2, '10': 'rrect', '17': true},
   ],
   '8': [
     {'1': '_op'},
@@ -4675,10 +2352,9 @@ const DrawViewEndAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `DrawViewEndAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List drawViewEndAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CiNEcmF3Vmlld0VuZEFubm90YXRpb25Db21tYW5kUGF5bG9hZBITCgJpZBgBIAEoBUgAUgJpZI'
-        'gBAUIFCgNfaWQ=');
+final $typed_data.Uint8List drawViewEndAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CiNEcmF3Vmlld0VuZEFubm90YXRpb25Db21tYW5kUGF5bG9hZBITCgJpZBgBIAEoBUgAUgJpZI'
+    'gBAUIFCgNfaWQ=');
 
 @$core.Deprecated('Use drawViewStartAnnotationCommandPayloadDescriptor instead')
 const DrawViewStartAnnotationCommandPayload$json = {
@@ -4692,13 +2368,11 @@ const DrawViewStartAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `DrawViewStartAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List drawViewStartAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CiVEcmF3Vmlld1N0YXJ0QW5ub3RhdGlvbkNvbW1hbmRQYXlsb2FkEhMKAmlkGAEgASgFSABSAm'
-        'lkiAEBQgUKA19pZA==');
+final $typed_data.Uint8List drawViewStartAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CiVEcmF3Vmlld1N0YXJ0QW5ub3RhdGlvbkNvbW1hbmRQYXlsb2FkEhMKAmlkGAEgASgFSABSAm'
+    'lkiAEBQgUKA19pZA==');
 
-@$core.Deprecated(
-    'Use drawViewContentEndAnnotationCommandPayloadDescriptor instead')
+@$core.Deprecated('Use drawViewContentEndAnnotationCommandPayloadDescriptor instead')
 const DrawViewContentEndAnnotationCommandPayload$json = {
   '1': 'DrawViewContentEndAnnotationCommandPayload',
   '2': [
@@ -4710,14 +2384,11 @@ const DrawViewContentEndAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `DrawViewContentEndAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List
-    drawViewContentEndAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CipEcmF3Vmlld0NvbnRlbnRFbmRBbm5vdGF0aW9uQ29tbWFuZFBheWxvYWQSEwoCaWQYASABKA'
-        'VIAFICaWSIAQFCBQoDX2lk');
+final $typed_data.Uint8List drawViewContentEndAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CipEcmF3Vmlld0NvbnRlbnRFbmRBbm5vdGF0aW9uQ29tbWFuZFBheWxvYWQSEwoCaWQYASABKA'
+    'VIAFICaWSIAQFCBQoDX2lk');
 
-@$core.Deprecated(
-    'Use drawViewContentStartAnnotationCommandPayloadDescriptor instead')
+@$core.Deprecated('Use drawViewContentStartAnnotationCommandPayloadDescriptor instead')
 const DrawViewContentStartAnnotationCommandPayload$json = {
   '1': 'DrawViewContentStartAnnotationCommandPayload',
   '2': [
@@ -4729,14 +2400,11 @@ const DrawViewContentStartAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `DrawViewContentStartAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List
-    drawViewContentStartAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CixEcmF3Vmlld0NvbnRlbnRTdGFydEFubm90YXRpb25Db21tYW5kUGF5bG9hZBITCgJpZBgBIA'
-        'EoBUgAUgJpZIgBAUIFCgNfaWQ=');
+final $typed_data.Uint8List drawViewContentStartAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CixEcmF3Vmlld0NvbnRlbnRTdGFydEFubm90YXRpb25Db21tYW5kUGF5bG9hZBITCgJpZBgBIA'
+    'EoBUgAUgJpZIgBAUIFCgNfaWQ=');
 
-@$core.Deprecated(
-    'Use fillViewCommandsAnnotationCommandPayloadDescriptor instead')
+@$core.Deprecated('Use fillViewCommandsAnnotationCommandPayloadDescriptor instead')
 const FillViewCommandsAnnotationCommandPayload$json = {
   '1': 'FillViewCommandsAnnotationCommandPayload',
   '2': [
@@ -4748,58 +2416,19 @@ const FillViewCommandsAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `FillViewCommandsAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List fillViewCommandsAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CihGaWxsVmlld0NvbW1hbmRzQW5ub3RhdGlvbkNvbW1hbmRQYXlsb2FkEhMKAmlkGAEgASgFSA'
-        'BSAmlkiAEBQgUKA19pZA==');
+final $typed_data.Uint8List fillViewCommandsAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CihGaWxsVmlld0NvbW1hbmRzQW5ub3RhdGlvbkNvbW1hbmRQYXlsb2FkEhMKAmlkGAEgASgFSA'
+    'BSAmlkiAEBQgUKA19pZA==');
 
 @$core.Deprecated('Use drawAtlasCommandPayloadDescriptor instead')
 const DrawAtlasCommandPayload$json = {
   '1': 'DrawAtlasCommandPayload',
   '2': [
-    {
-      '1': 'paintIndex',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintIndex',
-      '17': true
-    },
-    {
-      '1': 'imageIndex',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'imageIndex',
-      '17': true
-    },
-    {
-      '1': 'srcRects',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect',
-      '10': 'srcRects'
-    },
-    {
-      '1': 'dstXforms',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.RSXform',
-      '10': 'dstXforms'
-    },
-    {
-      '1': 'blendMode',
-      '3': 5,
-      '4': 1,
-      '5': 5,
-      '9': 2,
-      '10': 'blendMode',
-      '17': true
-    },
+    {'1': 'paintIndex', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintIndex', '17': true},
+    {'1': 'imageIndex', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'imageIndex', '17': true},
+    {'1': 'srcRects', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Rect', '10': 'srcRects'},
+    {'1': 'dstXforms', '3': 4, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RSXform', '10': 'dstXforms'},
+    {'1': 'blendMode', '3': 5, '4': 1, '5': 5, '9': 2, '10': 'blendMode', '17': true},
     {'1': 'colors', '3': 6, '4': 3, '5': 5, '10': 'colors'},
   ],
   '8': [
@@ -4823,25 +2452,8 @@ final $typed_data.Uint8List drawAtlasCommandPayloadDescriptor = $convert.base64D
 const DrawCircleCommandPayload$json = {
   '1': 'DrawCircleCommandPayload',
   '2': [
-    {
-      '1': 'paintIndex',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintIndex',
-      '17': true
-    },
-    {
-      '1': 'point',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 1,
-      '10': 'point',
-      '17': true
-    },
+    {'1': 'paintIndex', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintIndex', '17': true},
+    {'1': 'point', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 1, '10': 'point', '17': true},
     {'1': 'radius', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'radius', '17': true},
   ],
   '8': [
@@ -4862,25 +2474,8 @@ final $typed_data.Uint8List drawCircleCommandPayloadDescriptor = $convert.base64
 const DrawColorCommandPayload$json = {
   '1': 'DrawColorCommandPayload',
   '2': [
-    {
-      '1': 'color',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f',
-      '9': 0,
-      '10': 'color',
-      '17': true
-    },
-    {
-      '1': 'blendMode',
-      '3': 2,
-      '4': 1,
-      '5': 5,
-      '9': 1,
-      '10': 'blendMode',
-      '17': true
-    },
+    {'1': 'color', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Color4f', '9': 0, '10': 'color', '17': true},
+    {'1': 'blendMode', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'blendMode', '17': true},
   ],
   '8': [
     {'1': '_color'},
@@ -4899,35 +2494,9 @@ final $typed_data.Uint8List drawColorCommandPayloadDescriptor = $convert.base64D
 const DrawLineCommandPayload$json = {
   '1': 'DrawLineCommandPayload',
   '2': [
-    {
-      '1': 'paintIndex',
-      '3': 1,
-      '4': 1,
-      '5': 5,
-      '9': 0,
-      '10': 'paintIndex',
-      '17': true
-    },
-    {
-      '1': 'point1',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 1,
-      '10': 'point1',
-      '17': true
-    },
-    {
-      '1': 'point2',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point',
-      '9': 2,
-      '10': 'point2',
-      '17': true
-    },
+    {'1': 'paintIndex', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'paintIndex', '17': true},
+    {'1': 'point1', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 1, '10': 'point1', '17': true},
+    {'1': 'point2', '3': 3, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Point', '9': 2, '10': 'point2', '17': true},
   ],
   '8': [
     {'1': '_paintIndex'},
@@ -4948,26 +2517,8 @@ final $typed_data.Uint8List drawLineCommandPayloadDescriptor = $convert.base64De
 const DrawRenderParagraphCommandPayload$json = {
   '1': 'DrawRenderParagraphCommandPayload',
   '2': [
-    {
-      '1': 'renderParagraph',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.RenderText',
-      '9': 0,
-      '10': 'renderParagraph',
-      '17': true
-    },
-    {
-      '1': 'offset',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset',
-      '9': 1,
-      '10': 'offset',
-      '17': true
-    },
+    {'1': 'renderParagraph', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RenderText', '9': 0, '10': 'renderParagraph', '17': true},
+    {'1': 'offset', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset', '9': 1, '10': 'offset', '17': true},
   ],
   '8': [
     {'1': '_renderParagraph'},
@@ -4995,24 +2546,15 @@ const RestoreToCountCommandPayload$json = {
 };
 
 /// Descriptor for `RestoreToCountCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List restoreToCountCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChxSZXN0b3JlVG9Db3VudENvbW1hbmRQYXlsb2FkEhkKBWNvdW50GAEgASgFSABSBWNvdW50iA'
-        'EBQggKBl9jb3VudA==');
+final $typed_data.Uint8List restoreToCountCommandPayloadDescriptor = $convert.base64Decode(
+    'ChxSZXN0b3JlVG9Db3VudENvbW1hbmRQYXlsb2FkEhkKBWNvdW50GAEgASgFSABSBWNvdW50iA'
+    'EBQggKBl9jb3VudA==');
 
 @$core.Deprecated('Use rotateCommandPayloadDescriptor instead')
 const RotateCommandPayload$json = {
   '1': 'RotateCommandPayload',
   '2': [
-    {
-      '1': 'angleInDegrees',
-      '3': 1,
-      '4': 1,
-      '5': 1,
-      '9': 0,
-      '10': 'angleInDegrees',
-      '17': true
-    },
+    {'1': 'angleInDegrees', '3': 1, '4': 1, '5': 1, '9': 0, '10': 'angleInDegrees', '17': true},
     {'1': 'rx', '3': 2, '4': 1, '5': 1, '9': 1, '10': 'rx', '17': true},
     {'1': 'ry', '3': 3, '4': 1, '5': 1, '9': 2, '10': 'ry', '17': true},
   ],
@@ -5056,32 +2598,15 @@ const TransformCommandPayload$json = {
 };
 
 /// Descriptor for `TransformCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List transformCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'ChdUcmFuc2Zvcm1Db21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAFSBm1hdHJpeA==');
+final $typed_data.Uint8List transformCommandPayloadDescriptor = $convert.base64Decode(
+    'ChdUcmFuc2Zvcm1Db21tYW5kUGF5bG9hZBIWCgZtYXRyaXgYASADKAFSBm1hdHJpeA==');
 
 @$core.Deprecated('Use errorViewAnnotationCommandPayloadDescriptor instead')
 const ErrorViewAnnotationCommandPayload$json = {
   '1': 'ErrorViewAnnotationCommandPayload',
   '2': [
-    {
-      '1': 'viewType',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '9': 0,
-      '10': 'viewType',
-      '17': true
-    },
-    {
-      '1': 'errorMessage',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '9': 1,
-      '10': 'errorMessage',
-      '17': true
-    },
+    {'1': 'viewType', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'viewType', '17': true},
+    {'1': 'errorMessage', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'errorMessage', '17': true},
   ],
   '8': [
     {'1': '_viewType'},
@@ -5090,36 +2615,17 @@ const ErrorViewAnnotationCommandPayload$json = {
 };
 
 /// Descriptor for `ErrorViewAnnotationCommandPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List errorViewAnnotationCommandPayloadDescriptor =
-    $convert.base64Decode(
-        'CiFFcnJvclZpZXdBbm5vdGF0aW9uQ29tbWFuZFBheWxvYWQSHwoIdmlld1R5cGUYASABKAlIAF'
-        'IIdmlld1R5cGWIAQESJwoMZXJyb3JNZXNzYWdlGAIgASgJSAFSDGVycm9yTWVzc2FnZYgBAUIL'
-        'Cglfdmlld1R5cGVCDwoNX2Vycm9yTWVzc2FnZQ==');
+final $typed_data.Uint8List errorViewAnnotationCommandPayloadDescriptor = $convert.base64Decode(
+    'CiFFcnJvclZpZXdBbm5vdGF0aW9uQ29tbWFuZFBheWxvYWQSHwoIdmlld1R5cGUYASABKAlIAF'
+    'IIdmlld1R5cGWIAQESJwoMZXJyb3JNZXNzYWdlGAIgASgJSAFSDGVycm9yTWVzc2FnZYgBAUIL'
+    'Cglfdmlld1R5cGVCDwoNX2Vycm9yTWVzc2FnZQ==');
 
 @$core.Deprecated('Use drawRenderEditableCommandPayloadDescriptor instead')
 const DrawRenderEditableCommandPayload$json = {
   '1': 'DrawRenderEditableCommandPayload',
   '2': [
-    {
-      '1': 'renderEditable',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.RenderText',
-      '9': 0,
-      '10': 'renderEditable',
-      '17': true
-    },
-    {
-      '1': 'offset',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset',
-      '9': 1,
-      '10': 'offset',
-      '17': true
-    },
+    {'1': 'renderEditable', '3': 1, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RenderText', '9': 0, '10': 'renderEditable', '17': true},
+    {'1': 'offset', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Offset', '9': 1, '10': 'offset', '17': true},
   ],
   '8': [
     {'1': '_renderEditable'},
@@ -5139,457 +2645,51 @@ final $typed_data.Uint8List drawRenderEditableCommandPayloadDescriptor = $conver
 const DisplayCommandV2$json = {
   '1': 'DisplayCommandV2',
   '2': [
-    {
-      '1': 'type',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandType',
-      '9': 1,
-      '10': 'type',
-      '17': true
-    },
-    {
-      '1': 'clipRectPayload',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ClipRectCommandPayload',
-      '9': 0,
-      '10': 'clipRectPayload'
-    },
-    {
-      '1': 'concatPayload',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ConcatCommandPayload',
-      '9': 0,
-      '10': 'concatPayload'
-    },
-    {
-      '1': 'concat44Payload',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.Concat44CommandPayload',
-      '9': 0,
-      '10': 'concat44Payload'
-    },
-    {
-      '1': 'drawArcPayload',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawArcCommandPayload',
-      '9': 0,
-      '10': 'drawArcPayload'
-    },
-    {
-      '1': 'drawBehindPaintPayload',
-      '3': 6,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawBehindPaintCommandPayload',
-      '9': 0,
-      '10': 'drawBehindPaintPayload'
-    },
-    {
-      '1': 'drawDRRectPayload',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawDRRectCommandPayload',
-      '9': 0,
-      '10': 'drawDRRectPayload'
-    },
-    {
-      '1': 'drawImagePayload',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageCommandPayload',
-      '9': 0,
-      '10': 'drawImagePayload'
-    },
-    {
-      '1': 'drawImageLatticePayload',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageLatticeCommandPayload',
-      '9': 0,
-      '10': 'drawImageLatticePayload'
-    },
-    {
-      '1': 'drawImageNinePayload',
-      '3': 10,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageNineCommandPayload',
-      '9': 0,
-      '10': 'drawImageNinePayload'
-    },
-    {
-      '1': 'drawImageRectPayload',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageRectCommandPayload',
-      '9': 0,
-      '10': 'drawImageRectPayload'
-    },
-    {
-      '1': 'drawPaintPayload',
-      '3': 12,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawPaintCommandPayload',
-      '9': 0,
-      '10': 'drawPaintPayload'
-    },
-    {
-      '1': 'drawPathPayload',
-      '3': 13,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawPathCommandPayload',
-      '9': 0,
-      '10': 'drawPathPayload'
-    },
-    {
-      '1': 'drawRectPayload',
-      '3': 14,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawRectCommandPayload',
-      '9': 0,
-      '10': 'drawRectPayload'
-    },
-    {
-      '1': 'translatePayload',
-      '3': 15,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.TranslateCommandPayload',
-      '9': 0,
-      '10': 'translatePayload'
-    },
-    {
-      '1': 'drawOvalPayload',
-      '3': 16,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawOvalCommandPayload',
-      '9': 0,
-      '10': 'drawOvalPayload'
-    },
-    {
-      '1': 'drawPointsPayload',
-      '3': 17,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawPointsCommandPayload',
-      '9': 0,
-      '10': 'drawPointsPayload'
-    },
-    {
-      '1': 'drawRRectPayload',
-      '3': 18,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawRRectCommandPayload',
-      '9': 0,
-      '10': 'drawRRectPayload'
-    },
-    {
-      '1': 'drawTextBlobPayload',
-      '3': 19,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawTextBlobCommandPayload',
-      '9': 0,
-      '10': 'drawTextBlobPayload'
-    },
-    {
-      '1': 'drawVerticesPayload',
-      '3': 20,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawVerticesCommandPayload',
-      '9': 0,
-      '10': 'drawVerticesPayload'
-    },
-    {
-      '1': 'savePayload',
-      '3': 21,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SaveCommandPayload',
-      '9': 0,
-      '10': 'savePayload'
-    },
-    {
-      '1': 'restorePayload',
-      '3': 22,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.RestoreCommandPayload',
-      '9': 0,
-      '10': 'restorePayload'
-    },
-    {
-      '1': 'saveBehindPayload',
-      '3': 23,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SaveBehindCommandPayload',
-      '9': 0,
-      '10': 'saveBehindPayload'
-    },
-    {
-      '1': 'saveLayerPayload',
-      '3': 24,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SaveLayerCommandPayload',
-      '9': 0,
-      '10': 'saveLayerPayload'
-    },
-    {
-      '1': 'scalePayload',
-      '3': 25,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ScaleCommandPayload',
-      '9': 0,
-      '10': 'scalePayload'
-    },
-    {
-      '1': 'setMatrixPayload',
-      '3': 26,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SetMatrixCommandPayload',
-      '9': 0,
-      '10': 'setMatrixPayload'
-    },
-    {
-      '1': 'setMatrix44Payload',
-      '3': 27,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SetMatrix44CommandPayload',
-      '9': 0,
-      '10': 'setMatrix44Payload'
-    },
-    {
-      '1': 'clipPathPayload',
-      '3': 28,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ClipPathCommandPayload',
-      '9': 0,
-      '10': 'clipPathPayload'
-    },
-    {
-      '1': 'clipRRectPayload',
-      '3': 29,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ClipRRectCommandPayload',
-      '9': 0,
-      '10': 'clipRRectPayload'
-    },
-    {
-      '1': 'drawViewEndAnnotationPayload',
-      '3': 30,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewEndAnnotationCommandPayload',
-      '9': 0,
-      '10': 'drawViewEndAnnotationPayload'
-    },
-    {
-      '1': 'drawViewStartAnnotationPayload',
-      '3': 31,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewStartAnnotationCommandPayload',
-      '9': 0,
-      '10': 'drawViewStartAnnotationPayload'
-    },
-    {
-      '1': 'drawViewContentEndAnnotationPayload',
-      '3': 32,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewContentEndAnnotationCommandPayload',
-      '9': 0,
-      '10': 'drawViewContentEndAnnotationPayload'
-    },
-    {
-      '1': 'drawViewContentStartAnnotationPayload',
-      '3': 33,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewContentStartAnnotationCommandPayload',
-      '9': 0,
-      '10': 'drawViewContentStartAnnotationPayload'
-    },
-    {
-      '1': 'fillViewCommandsAnnotationPayload',
-      '3': 34,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.FillViewCommandsAnnotationCommandPayload',
-      '9': 0,
-      '10': 'fillViewCommandsAnnotationPayload'
-    },
-    {
-      '1': 'drawAtlasPayload',
-      '3': 35,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawAtlasCommandPayload',
-      '9': 0,
-      '10': 'drawAtlasPayload'
-    },
-    {
-      '1': 'drawCirclePayload',
-      '3': 36,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawCircleCommandPayload',
-      '9': 0,
-      '10': 'drawCirclePayload'
-    },
-    {
-      '1': 'drawColorPayload',
-      '3': 37,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawColorCommandPayload',
-      '9': 0,
-      '10': 'drawColorPayload'
-    },
-    {
-      '1': 'drawLinePayload',
-      '3': 38,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawLineCommandPayload',
-      '9': 0,
-      '10': 'drawLinePayload'
-    },
-    {
-      '1': 'drawRenderParagraphPayload',
-      '3': 39,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawRenderParagraphCommandPayload',
-      '9': 0,
-      '10': 'drawRenderParagraphPayload'
-    },
-    {
-      '1': 'restoreToCountPayload',
-      '3': 40,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.RestoreToCountCommandPayload',
-      '9': 0,
-      '10': 'restoreToCountPayload'
-    },
-    {
-      '1': 'rotatePayload',
-      '3': 41,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.RotateCommandPayload',
-      '9': 0,
-      '10': 'rotatePayload'
-    },
-    {
-      '1': 'skewPayload',
-      '3': 42,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.SkewCommandPayload',
-      '9': 0,
-      '10': 'skewPayload'
-    },
-    {
-      '1': 'transformPayload',
-      '3': 43,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.TransformCommandPayload',
-      '9': 0,
-      '10': 'transformPayload'
-    },
-    {
-      '1': 'errorViewAnnotationPayload',
-      '3': 44,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.ErrorViewAnnotationCommandPayload',
-      '9': 0,
-      '10': 'errorViewAnnotationPayload'
-    },
-    {
-      '1': 'drawRenderEditablePayload',
-      '3': 45,
-      '4': 1,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DrawRenderEditableCommandPayload',
-      '9': 0,
-      '10': 'drawRenderEditablePayload'
-    },
+    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandType', '9': 1, '10': 'type', '17': true},
+    {'1': 'clipRectPayload', '3': 2, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ClipRectCommandPayload', '9': 0, '10': 'clipRectPayload'},
+    {'1': 'concatPayload', '3': 3, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ConcatCommandPayload', '9': 0, '10': 'concatPayload'},
+    {'1': 'concat44Payload', '3': 4, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Concat44CommandPayload', '9': 0, '10': 'concat44Payload'},
+    {'1': 'drawArcPayload', '3': 5, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawArcCommandPayload', '9': 0, '10': 'drawArcPayload'},
+    {'1': 'drawBehindPaintPayload', '3': 6, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawBehindPaintCommandPayload', '9': 0, '10': 'drawBehindPaintPayload'},
+    {'1': 'drawDRRectPayload', '3': 7, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawDRRectCommandPayload', '9': 0, '10': 'drawDRRectPayload'},
+    {'1': 'drawImagePayload', '3': 8, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageCommandPayload', '9': 0, '10': 'drawImagePayload'},
+    {'1': 'drawImageLatticePayload', '3': 9, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageLatticeCommandPayload', '9': 0, '10': 'drawImageLatticePayload'},
+    {'1': 'drawImageNinePayload', '3': 10, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageNineCommandPayload', '9': 0, '10': 'drawImageNinePayload'},
+    {'1': 'drawImageRectPayload', '3': 11, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawImageRectCommandPayload', '9': 0, '10': 'drawImageRectPayload'},
+    {'1': 'drawPaintPayload', '3': 12, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawPaintCommandPayload', '9': 0, '10': 'drawPaintPayload'},
+    {'1': 'drawPathPayload', '3': 13, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawPathCommandPayload', '9': 0, '10': 'drawPathPayload'},
+    {'1': 'drawRectPayload', '3': 14, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawRectCommandPayload', '9': 0, '10': 'drawRectPayload'},
+    {'1': 'translatePayload', '3': 15, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TranslateCommandPayload', '9': 0, '10': 'translatePayload'},
+    {'1': 'drawOvalPayload', '3': 16, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawOvalCommandPayload', '9': 0, '10': 'drawOvalPayload'},
+    {'1': 'drawPointsPayload', '3': 17, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawPointsCommandPayload', '9': 0, '10': 'drawPointsPayload'},
+    {'1': 'drawRRectPayload', '3': 18, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawRRectCommandPayload', '9': 0, '10': 'drawRRectPayload'},
+    {'1': 'drawTextBlobPayload', '3': 19, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawTextBlobCommandPayload', '9': 0, '10': 'drawTextBlobPayload'},
+    {'1': 'drawVerticesPayload', '3': 20, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawVerticesCommandPayload', '9': 0, '10': 'drawVerticesPayload'},
+    {'1': 'savePayload', '3': 21, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SaveCommandPayload', '9': 0, '10': 'savePayload'},
+    {'1': 'restorePayload', '3': 22, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RestoreCommandPayload', '9': 0, '10': 'restorePayload'},
+    {'1': 'saveBehindPayload', '3': 23, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SaveBehindCommandPayload', '9': 0, '10': 'saveBehindPayload'},
+    {'1': 'saveLayerPayload', '3': 24, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SaveLayerCommandPayload', '9': 0, '10': 'saveLayerPayload'},
+    {'1': 'scalePayload', '3': 25, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ScaleCommandPayload', '9': 0, '10': 'scalePayload'},
+    {'1': 'setMatrixPayload', '3': 26, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SetMatrixCommandPayload', '9': 0, '10': 'setMatrixPayload'},
+    {'1': 'setMatrix44Payload', '3': 27, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SetMatrix44CommandPayload', '9': 0, '10': 'setMatrix44Payload'},
+    {'1': 'clipPathPayload', '3': 28, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ClipPathCommandPayload', '9': 0, '10': 'clipPathPayload'},
+    {'1': 'clipRRectPayload', '3': 29, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ClipRRectCommandPayload', '9': 0, '10': 'clipRRectPayload'},
+    {'1': 'drawViewEndAnnotationPayload', '3': 30, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewEndAnnotationCommandPayload', '9': 0, '10': 'drawViewEndAnnotationPayload'},
+    {'1': 'drawViewStartAnnotationPayload', '3': 31, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewStartAnnotationCommandPayload', '9': 0, '10': 'drawViewStartAnnotationPayload'},
+    {'1': 'drawViewContentEndAnnotationPayload', '3': 32, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewContentEndAnnotationCommandPayload', '9': 0, '10': 'drawViewContentEndAnnotationPayload'},
+    {'1': 'drawViewContentStartAnnotationPayload', '3': 33, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawViewContentStartAnnotationCommandPayload', '9': 0, '10': 'drawViewContentStartAnnotationPayload'},
+    {'1': 'fillViewCommandsAnnotationPayload', '3': 34, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.FillViewCommandsAnnotationCommandPayload', '9': 0, '10': 'fillViewCommandsAnnotationPayload'},
+    {'1': 'drawAtlasPayload', '3': 35, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawAtlasCommandPayload', '9': 0, '10': 'drawAtlasPayload'},
+    {'1': 'drawCirclePayload', '3': 36, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawCircleCommandPayload', '9': 0, '10': 'drawCirclePayload'},
+    {'1': 'drawColorPayload', '3': 37, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawColorCommandPayload', '9': 0, '10': 'drawColorPayload'},
+    {'1': 'drawLinePayload', '3': 38, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawLineCommandPayload', '9': 0, '10': 'drawLinePayload'},
+    {'1': 'drawRenderParagraphPayload', '3': 39, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawRenderParagraphCommandPayload', '9': 0, '10': 'drawRenderParagraphPayload'},
+    {'1': 'restoreToCountPayload', '3': 40, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RestoreToCountCommandPayload', '9': 0, '10': 'restoreToCountPayload'},
+    {'1': 'rotatePayload', '3': 41, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.RotateCommandPayload', '9': 0, '10': 'rotatePayload'},
+    {'1': 'skewPayload', '3': 42, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.SkewCommandPayload', '9': 0, '10': 'skewPayload'},
+    {'1': 'transformPayload', '3': 43, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TransformCommandPayload', '9': 0, '10': 'transformPayload'},
+    {'1': 'errorViewAnnotationPayload', '3': 44, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ErrorViewAnnotationCommandPayload', '9': 0, '10': 'errorViewAnnotationPayload'},
+    {'1': 'drawRenderEditablePayload', '3': 45, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DrawRenderEditableCommandPayload', '9': 0, '10': 'drawRenderEditablePayload'},
   ],
   '8': [
     {'1': 'payload'},
@@ -5710,153 +2810,23 @@ final $typed_data.Uint8List displayCommandV2Descriptor = $convert.base64Decode(
 const DisplayFrameV2$json = {
   '1': 'DisplayFrameV2',
   '2': [
-    {
-      '1': 'commands',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6':
-          '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandV2',
-      '10': 'commands'
-    },
-    {
-      '1': 'typefaces',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Typeface',
-      '10': 'typefaces'
-    },
-    {
-      '1': 'images',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Image',
-      '10': 'images'
-    },
-    {
-      '1': 'text_blobs',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlob',
-      '10': 'textBlobs'
-    },
-    {
-      '1': 'vertices',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Vertices',
-      '10': 'vertices'
-    },
-    {
-      '1': 'paints',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint',
-      '10': 'paints'
-    },
-    {
-      '1': 'paths',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path',
-      '10': 'paths'
-    },
-    {
-      '1': 'sub_pictures',
-      '3': 8,
-      '4': 3,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayFrameV2',
-      '10': 'subPictures'
-    },
-    {
-      '1': 'view_hierarchy',
-      '3': 9,
-      '4': 1,
-      '5': 11,
-      '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewHierarchy',
-      '9': 0,
-      '10': 'viewHierarchy',
-      '17': true
-    },
-    {
-      '1': 'timestamp',
-      '3': 10,
-      '4': 1,
-      '5': 1,
-      '9': 1,
-      '10': 'timestamp',
-      '17': true
-    },
-    {
-      '1': 'activity_name',
-      '3': 11,
-      '4': 1,
-      '5': 9,
-      '9': 2,
-      '10': 'activityName',
-      '17': true
-    },
-    {
-      '1': 'activity_id',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '9': 3,
-      '10': 'activityId',
-      '17': true
-    },
-    {
-      '1': 'screen_width',
-      '3': 13,
-      '4': 1,
-      '5': 5,
-      '9': 4,
-      '10': 'screenWidth',
-      '17': true
-    },
-    {
-      '1': 'screen_height',
-      '3': 14,
-      '4': 1,
-      '5': 5,
-      '9': 5,
-      '10': 'screenHeight',
-      '17': true
-    },
-    {
-      '1': 'density',
-      '3': 15,
-      '4': 1,
-      '5': 2,
-      '9': 6,
-      '10': 'density',
-      '17': true
-    },
-    {
-      '1': 'keyboard_height',
-      '3': 16,
-      '4': 1,
-      '5': 5,
-      '9': 7,
-      '10': 'keyboardHeight',
-      '17': true
-    },
-    {
-      '1': 'system_background_color',
-      '3': 17,
-      '4': 1,
-      '5': 5,
-      '9': 8,
-      '10': 'systemBackgroundColor',
-      '17': true
-    },
+    {'1': 'commands', '3': 1, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayCommandV2', '10': 'commands'},
+    {'1': 'typefaces', '3': 2, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Typeface', '10': 'typefaces'},
+    {'1': 'images', '3': 3, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Image', '10': 'images'},
+    {'1': 'text_blobs', '3': 4, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.TextBlob', '10': 'textBlobs'},
+    {'1': 'vertices', '3': 5, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Vertices', '10': 'vertices'},
+    {'1': 'paints', '3': 6, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Paint', '10': 'paints'},
+    {'1': 'paths', '3': 7, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.Path', '10': 'paths'},
+    {'1': 'sub_pictures', '3': 8, '4': 3, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.DisplayFrameV2', '10': 'subPictures'},
+    {'1': 'view_hierarchy', '3': 9, '4': 1, '5': 11, '6': '.com.microsoft.clarity.protomodels.mutationpayload.ViewHierarchy', '9': 0, '10': 'viewHierarchy', '17': true},
+    {'1': 'timestamp', '3': 10, '4': 1, '5': 1, '9': 1, '10': 'timestamp', '17': true},
+    {'1': 'activity_name', '3': 11, '4': 1, '5': 9, '9': 2, '10': 'activityName', '17': true},
+    {'1': 'activity_id', '3': 12, '4': 1, '5': 5, '9': 3, '10': 'activityId', '17': true},
+    {'1': 'screen_width', '3': 13, '4': 1, '5': 5, '9': 4, '10': 'screenWidth', '17': true},
+    {'1': 'screen_height', '3': 14, '4': 1, '5': 5, '9': 5, '10': 'screenHeight', '17': true},
+    {'1': 'density', '3': 15, '4': 1, '5': 2, '9': 6, '10': 'density', '17': true},
+    {'1': 'keyboard_height', '3': 16, '4': 1, '5': 5, '9': 7, '10': 'keyboardHeight', '17': true},
+    {'1': 'system_background_color', '3': 17, '4': 1, '5': 5, '9': 8, '10': 'systemBackgroundColor', '17': true},
   ],
   '8': [
     {'1': '_view_hierarchy'},
@@ -5898,3 +2868,4 @@ final $typed_data.Uint8List displayFrameV2Descriptor = $convert.base64Decode(
     'X25hbWVCDgoMX2FjdGl2aXR5X2lkQg8KDV9zY3JlZW5fd2lkdGhCEAoOX3NjcmVlbl9oZWlnaH'
     'RCCgoIX2RlbnNpdHlCEgoQX2tleWJvYXJkX2hlaWdodEIaChhfc3lzdGVtX2JhY2tncm91bmRf'
     'Y29sb3I=');
+

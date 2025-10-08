@@ -24,9 +24,7 @@ dependencies:
   device_info_plus: '>=9.0.2'
   # needed for image encoding as png
   image: '>=4.0.0'
-  protobuf: ^4.2.0
-  # needed because protobuf depends on it, and generated code imports it directly
-  fixnum: ^1.0.0
+  protobuf: ^3.1.0
 
 dev_dependencies:
   flutter_test:
