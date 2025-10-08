@@ -1,0 +1,36 @@
+name: clarity_flutter
+description: Official Microsoft Clarity Flutter SDK; add free, privacy‑conscious session replay, heatmaps & interaction analytics to Flutter mobile apps.
+homepage: https://clarity.microsoft.com/mobile-apps
+version: 1.4.2
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+exclude:
+  - Makefile
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # needed to fetch cache path on device to store files
+  # bumps min flutter version to 3.19
+  path_provider: '>=2.1.4'
+  # needed for json annotations to generate json converters for data classes
+  json_annotation: '>=4.9.0'
+  # needed for package name, this version supports down to flutter 3.6
+  package_info_plus: '>=4.0.1'
+  # needed for device information
+  device_info_plus: '>=9.0.2'
+  # needed for image encoding as png
+  image: '>=4.0.0'
+  protobuf: ^4.2.0
+  # needed because protobuf depends on it, and generated code imports it directly
+  fixnum: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.9
+  json_serializable: '<6.10.0'

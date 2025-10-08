@@ -1,0 +1,20 @@
+  targets:
+    $default:
+      builders:
+        json_serializable:
+          generate_for:
+            include:
+              - lib/**.dart
+            exclude:
+              - example/**.dart
+        source_gen:combining_builder:
+          options:
+            build_extensions:
+              # Note run "dart run build_runner build --delete-conflicting-outputs" to generate json files
+              # paths cannot overlap here it will not generate. for example we cannot add for files
+              # in lib/src/models/** if we have lib/src/models/display/**
+              '^lib/src/models/display/{{}}.dart': 'lib/src/models/generated/{{}}.g.dart'
+              '^lib/src/models/assets/{{}}.dart': 'lib/src/models/generated/{{}}.g.dart'
+              '^lib/src/models/text/{{}}.dart': 'lib/src/models/generated/{{}}.g.dart'
+              '^lib/src/models/view_hierarchy/{{}}.dart': 'lib/src/models/generated/{{}}.g.dart'
+              '^lib/src/models/session/{{}}.dart': 'lib/src/models/generated/{{}}.g.dart'

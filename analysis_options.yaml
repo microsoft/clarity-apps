@@ -1,0 +1,11 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - lib/src/models/generated/**
+
+linter:
+  rules:
+    prefer_relative_imports: true
+    unnecessary_breaks: true
+    dangling_library_doc_comments: true
