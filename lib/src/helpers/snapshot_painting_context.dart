@@ -2,8 +2,6 @@
 /// Licensed under the MIT License.
 library;
 
-import 'dart:math';
-
 import 'package:flutter/rendering.dart';
 import '../clarity_constants.dart';
 import '../models/capture/edit_text_info.dart';
@@ -209,11 +207,9 @@ class SnapshotPaintingContext extends PaintingContext {
         viewWidth: absoluteBounds.width.toInt(),
         viewHeight: absoluteBounds.height.toInt(),
         visible: isVisible,
-        clickable: child.isClickable(),
         objectRef: WeakReference(child),
         explicitMaskingState: explicitMasking,
-        isMasked: isMasked,
-        nodeBounds: child.globalPaintBounds(null));
+        isMasked: isMasked);
 
     currentPaintingObject = node;
 
@@ -238,7 +234,6 @@ class SnapshotPaintingContext extends PaintingContext {
           currentPainterMaskingMode,
           clarity_text.RenderParagraph.fromDartRenderParagraph,
           clarity_display.DrawRenderParagraph.new);
-      node.text = _getRenderParagraphText(child, currentPainterMaskingMode);
     } else if (_shouldDrawRenderEditable(child)) {
       _paintRenderTextWithPlaceholders(
           child,
@@ -246,8 +241,6 @@ class SnapshotPaintingContext extends PaintingContext {
           currentPainterMaskingMode,
           clarity_text.RenderEditable.fromDartRenderEditable,
           clarity_display.DrawRenderEditable.new);
-      node.text = _getRenderEditableText(
-          child as RenderEditable, currentPainterMaskingMode);
     } else if (!skippingObjectsDisabled &&
         (child is RenderEditable ||
             child is PlatformViewRenderBox ||
@@ -268,33 +261,6 @@ class SnapshotPaintingContext extends PaintingContext {
     }
 
     _resetParent(parent, parentTransform);
-  }
-
-  String _getRenderParagraphText(
-      RenderParagraph renderParagraph, MaskingMode maskingMode) {
-    var fontSize = renderParagraph.text.style?.fontSize;
-    String text = renderParagraph.text
-        .toPlainText()
-        .substring(
-            0,
-            min((renderParagraph.text as TextSpan).text?.length ?? 0,
-                ClarityConstants.viewNodeTextMaxLength))
-        .trim();
-
-    return MaskingUtils.maskText(maskingMode, text, fontSize);
-  }
-
-  String _getRenderEditableText(
-      RenderEditable renderEditable, MaskingMode maskingMode) {
-    var fontSize = renderEditable.text?.style?.fontSize;
-    String text = renderEditable.plainText
-        .substring(
-            0,
-            min(renderEditable.plainText.length,
-                ClarityConstants.viewNodeTextMaxLength))
-        .trim();
-
-    return MaskingUtils.maskText(maskingMode, text, fontSize);
   }
 
   void _paintWithErrorHandling(RenderObject child, Offset offset) {

@@ -3,8 +3,10 @@
 library;
 
 import 'dart:developer';
+import 'dart:math';
 import 'dart:typed_data';
 import 'package:flutter/cupertino.dart' as cupertino;
+import 'package:flutter/rendering.dart';
 
 import '../helpers/telemetry_tracker.dart';
 import '../mixins/event_queue_handler.dart';
@@ -32,12 +34,14 @@ import '../utils/dev_utils.dart';
 import '../utils/render_object_utils.dart';
 import '../utils/log_utils.dart';
 import '../utils/asset_utils.dart';
+import '../clarity_constants.dart';
 
 class CaptureManager with CallbackHandler, EventQueueHandler {
   late SnapshotCapturer snapshotCapturer;
   late ClarityGestureObserver clarityGestureObserver;
   final Map<int, NativeImageWrapper> _imageCache = {};
   final Map<int, Paint> _paintsCache = {};
+  Matrix4? deviceTransformationMatrix;
   bool _started = false;
   String? _userProvidedScreenName;
   bool _observersPaused = false;
@@ -54,7 +58,7 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
         .maskingMode;
     snapshotCapturer =
         SnapshotCapturer(maskingMode, enqueueEvent, _paintsCache);
-    clarityGestureObserver = ClarityGestureObserver(enqueueEvent);
+    clarityGestureObserver = ClarityGestureObserver(enqueueEvent, maskingMode);
   }
 
   factory CaptureManager.create() {
@@ -140,7 +144,7 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
 
     switch (event) {
       case UserGesture():
-        fireEvent<SessionEvent>(event.gestureEvent);
+        fireEvent<SessionEvent>(_processGestureEvent(event));
 
       case Snapshot():
         fireEvent<SessionEvent>(await _processSnapshot(event));
@@ -168,6 +172,7 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
   Future<MutationEvent> _processSnapshot(Snapshot snapshot) async {
     late DisplayFrame frame;
     await profileTimeSync("ClarityProcessSnapshot", () async {
+      deviceTransformationMatrix = snapshot.deviceTransformationMatrix;
       frame = await _getDisplayFrame(snapshot);
       _cleanUpCache();
     });
@@ -177,6 +182,18 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
 
     return MutationEvent(snapshot.timestamp, frame,
         _userProvidedScreenName ?? hostInfo.defaultScreenName);
+  }
+
+  GestureEvent _processGestureEvent(UserGesture event) {
+    final gestureEvent = event.gestureEvent;
+
+    if (gestureEvent is Click) {
+      _updateAnalyticsClickEvent(gestureEvent);
+    }
+
+    _updateEventCoordinationToGlobal(gestureEvent);
+
+    return gestureEvent;
   }
 
   KeystrokesEvent _processUserKeyboardTap(UserKeyboardTap event) =>
@@ -257,17 +274,15 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
     final viewHierarchy = ViewHierarchy(snapshot.timestamp, snapshot.root!);
 
     return DisplayFrame(
-      snapshot.timestamp,
-      frameImages,
-      framePaints,
-      snapshot.commands,
-      snapshot.root!.width.toInt(),
-      snapshot.root!.height.toInt(),
-      snapshot.keyboardHeight,
-      viewHierarchy,
-      snapshot.deviceTransformationMatrix.storage[0],
-      viewId: snapshot.flutterViewId,
-    );
+        snapshot.timestamp,
+        frameImages,
+        framePaints,
+        snapshot.commands,
+        snapshot.root!.width.toInt(),
+        snapshot.root!.height.toInt(),
+        snapshot.keyboardHeight,
+        viewHierarchy,
+        viewId: snapshot.flutterViewId);
   }
 
   void _cleanUpCache() {
@@ -282,5 +297,28 @@ class CaptureManager with CallbackHandler, EventQueueHandler {
       Logger.debug?.out("Clearing paints cache!");
       _paintsCache.clear();
     }
+  }
+
+  void _updateEventCoordinationToGlobal(GestureEvent event) {
+    if (deviceTransformationMatrix == null) {
+      Logger.warn?.out(
+          "Warning!, trying to process a click before a successful snapshot!");
+      return;
+    }
+    final dpr = deviceTransformationMatrix!.storage[0];
+    event.absX = event.absX * dpr;
+    event.absY = event.absY * dpr;
+  }
+
+  void _updateAnalyticsClickEvent(Click event) {
+    final relativeX =
+        ((event.absX - event.nodeBounds.left) / event.nodeBounds.width) *
+            ClarityConstants.clickPrecision;
+    final relativeY =
+        ((event.absY - event.nodeBounds.top) / event.nodeBounds.height) *
+            ClarityConstants.clickPrecision;
+
+    event.relativeX = max(relativeX.floor(), 0);
+    event.relativeY = max(relativeY.floor(), 0);
   }
 }

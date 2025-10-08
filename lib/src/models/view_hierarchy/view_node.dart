@@ -21,12 +21,11 @@ class ViewNode implements IProtoModel<mutation_payload.ViewNodeDelta> {
   final int viewWidth;
   final int viewHeight;
   final bool visible;
-  final bool clickable;
+  static const bool clickable = false;
   static const bool ignoreClicks = false;
   static const bool isWebView = false;
   final WeakReference<RenderObject> objectRef;
   String text;
-  Rect nodeBounds;
   ViewNode? previousFrameNode;
 
   // Inherited from parent if parent has explicit masking defined
@@ -49,10 +48,8 @@ class ViewNode implements IProtoModel<mutation_payload.ViewNodeDelta> {
       required this.viewWidth,
       required this.viewHeight,
       required this.visible,
-      required this.clickable,
       required this.objectRef,
       required this.isMasked,
-      required this.nodeBounds,
       this.explicitMaskingState,
       this.text = "",
       this.previousFrameNode});

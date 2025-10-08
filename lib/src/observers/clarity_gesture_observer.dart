@@ -2,16 +2,21 @@
 /// Licensed under the MIT License.
 library;
 
+import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import '../clarity_constants.dart';
 import '../helpers/telemetry_tracker.dart';
 import '../mixins/callback_handler.dart';
+import '../models/masking.dart';
 import '../models/telemetry/telemetry.dart';
 import '../utils/dev_utils.dart';
 import '../utils/entry_point.dart';
+import '../utils/masking_utils.dart';
+import '../utils/render_object_utils.dart';
 import '../utils/log_utils.dart';
 import '../models/capture/user_gesture.dart';
 import '../models/ingest/ingest.dart';
@@ -19,6 +24,7 @@ import 'iobserver.dart';
 
 class ClarityGestureObserver implements IObserver {
   final EventCallback _onObservedEvent;
+  final MaskingMode _projectDefaultMasking;
 
   DateTime? _lastClickTime;
   Offset? _lastClickPosition;
@@ -32,10 +38,12 @@ class ClarityGestureObserver implements IObserver {
   static ClarityGestureObserver? _instance;
   static bool _listenerWidgetAttached = false;
 
-  ClarityGestureObserver._(this._onObservedEvent);
+  ClarityGestureObserver._(this._onObservedEvent, this._projectDefaultMasking);
 
-  factory ClarityGestureObserver(EventCallback onObservedEvent) {
-    _instance ??= ClarityGestureObserver._(onObservedEvent);
+  factory ClarityGestureObserver(
+      EventCallback onObservedEvent, MaskingMode projectDefaultMasking) {
+    _instance ??=
+        ClarityGestureObserver._(onObservedEvent, projectDefaultMasking);
     return _instance!;
   }
 
@@ -181,8 +189,19 @@ class ClarityGestureObserver implements IObserver {
   }
 
   void _fireSingleClickEvent(PointerEvent event) {
-    enqueueUserGestureEvent(Click(DateTime.now().millisecondsSinceEpoch,
-        event.position.dx, event.position.dy, event.viewId));
+    final clickTarget =
+        profileTimeSync("ClarityGetClicked", () => _getClickedObject(event));
+
+    enqueueUserGestureEvent(Click(
+        DateTime.now().millisecondsSinceEpoch,
+        event.position.dx,
+        event.position.dy,
+        clickTarget.target!.getSelector(),
+        !clickTarget.hasClickable,
+        // TODO: area of perf improvement
+        clickTarget.target!.globalPaintBounds(null),
+        event.viewId,
+        clickTarget.text));
   }
 
   void _fireDoubleClickEvent(Offset clickedPosition, int pointerId) {
@@ -252,6 +271,73 @@ class ClarityGestureObserver implements IObserver {
         (currentPosition - _lastClickPosition!).distance <= kDoubleTapSlop;
   }
 
+  _ClickTarget _getClickedObject(PointerEvent event) {
+    final HitTestResult hitTestResult = _applyHitTestUnderPoint(event);
+
+    return _getClickableOrDeepestRenderObject(hitTestResult);
+  }
+
+  HitTestResult _applyHitTestUnderPoint(PointerEvent event) {
+    final HitTestResult result = HitTestResult();
+
+    // PointerEvent.viewId and WidgetsBinding.instance.hitTestInView only available from flutter >= 3.13.0
+    WidgetsBinding.instance.hitTestInView(result, event.position, event.viewId);
+
+    return result;
+  }
+
+  _ClickTarget _getClickableOrDeepestRenderObject(HitTestResult hitTestResult) {
+    _ClickTarget clickTarget = _ClickTarget();
+    String? clickText;
+    double? clickTextFontSize;
+    // Get the first clicked object from the deepest child or return the deepest child
+    // Order assumed in path from deepest child to root
+    for (final HitTestEntry entry in hitTestResult.path.toList()) {
+      final currentTarget = entry.target;
+      if (currentTarget is ClarityRenderPointerListener) break;
+      // If we find a TextSpan that is clickable, we mark hasClickable without setting the target as the target must be a `RenderObject`
+      // The target will be the next `RenderObject` in the click path
+      if (currentTarget is TextSpan) {
+        if (currentTarget.text != null) {
+          clickTextFontSize = currentTarget.style?.fontSize;
+          clickText = currentTarget.text!
+              .substring(
+                  0,
+                  min(currentTarget.text!.length,
+                      ClarityConstants.viewNodeTextMaxLength))
+              .trim();
+        }
+
+        clickTarget.hasClickable =
+            currentTarget.recognizer is BaseTapGestureRecognizer;
+      }
+      // Note that not all the `HitTestEntry` are `RenderObject` so we must search for the first render object entry
+      // TextSpan is an example of a `HitTestEntry` that may exist
+      if (currentTarget is! RenderObject) continue;
+
+      if (clickText != null && clickTarget.text == null) {
+        final maskingMode = MaskingUtils.determineMaskingMode(
+            currentTarget.getExplicitMasking(), _projectDefaultMasking);
+
+        clickTarget.text =
+            MaskingUtils.maskText(maskingMode, clickText, clickTextFontSize);
+      }
+
+      // We find the first `RenderObject` so that we have the smallest render object in the click path as the default target
+      clickTarget.target = clickTarget.target ?? currentTarget;
+      clickTarget.hasClickable =
+          clickTarget.hasClickable || currentTarget.isClickable();
+
+      // If the render object is clickable or has a clickable child, we use that as the target of the click and break
+      if (clickTarget.hasClickable) {
+        clickTarget.target = currentTarget;
+        break;
+      }
+    }
+
+    return clickTarget;
+  }
+
   static void _runWithErrorTracking(void Function() logic) {
     EntryPoint.run(logic, catchLogic: (e, st) {
       Logger.error?.out(
@@ -261,6 +347,12 @@ class ClarityGestureObserver implements IObserver {
           ?.trackError(ErrorType.CapturingTouchEvent, e.toString(), st);
     });
   }
+}
+
+class _ClickTarget {
+  RenderObject? target;
+  String? text;
+  bool hasClickable = false;
 }
 
 class ClarityListenerWidget extends Listener {

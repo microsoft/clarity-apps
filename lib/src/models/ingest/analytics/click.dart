@@ -11,13 +11,15 @@ import '../../events/session_event.dart';
 class Click extends GestureEvent {
   int relativeX = 0;
   int relativeY = 0;
-  bool? reaction;
+  bool reaction;
   int viewId = 0;
-  Rect? nodeBounds;
-  String? nodeSelector;
+  String nodeSelector;
+  // Node bounds are needed to calculate relative coordinates of the click
+  Rect nodeBounds;
   String? text;
 
-  Click(int timestamp, double absX, double absY, this.viewId)
+  Click(int timestamp, double absX, double absY, this.nodeSelector,
+      this.reaction, this.nodeBounds, this.viewId, this.text)
       : super(timestamp, EventType.Click, absX, absY,
             0 // Ignore it, we don't use the pointerId for the click events
             );
@@ -34,7 +36,7 @@ class Click extends GestureEvent {
         "$relativeX,"
         "$relativeY,"
         "0," // Ignore button
-        "${reaction == true ? 1 : 0},"
+        "${reaction ? 1 : 0},"
         "0," // Ignore context
         "\"${DataUtils.escape(text ?? "")}\","
         "null," // Ignore link

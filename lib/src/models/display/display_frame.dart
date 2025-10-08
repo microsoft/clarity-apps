@@ -19,7 +19,6 @@ class DisplayFrame
   int keyboardHeight;
   ViewHierarchy viewHierarchy;
   int? viewId;
-  double dpr;
 
   DisplayFrame(
       this.timestamp,
@@ -30,7 +29,6 @@ class DisplayFrame
       this.screenHeight,
       this.keyboardHeight,
       this.viewHierarchy,
-      this.dpr,
       {this.viewId});
 
   @override

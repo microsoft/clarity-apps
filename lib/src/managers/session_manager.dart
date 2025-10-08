@@ -11,12 +11,10 @@ import 'dart:ui';
 
 import 'package:flutter/services.dart';
 
-import '../helpers/gesture_processor.dart';
 import '../helpers/telemetry_tracker.dart';
 import '../helpers/view_hierarchy_processor.dart';
 import '../models/events/event.dart';
 import '../models/ingest/analytics/custom.dart';
-import '../models/ingest/ingest.dart';
 import '../models/telemetry/telemetry.dart';
 import '../registries/environment_registry.dart';
 import '../registries/host_info.dart';
@@ -43,6 +41,7 @@ import '../models/session/page_metadata.dart';
 import '../models/session/payload_metadata.dart';
 import '../models/isolates/session_isolate_config.dart';
 import '../repositories/session_repository.dart';
+import '../models/ingest/mutation_event.dart';
 import '../models/session/session_metadata.dart';
 import '../models/events/session_event.dart';
 import '../models/ingest/mutation_error_event.dart';
@@ -163,7 +162,6 @@ class SessionWorkerIsolate extends WorkerIsolate
   final List<String> _preSessionCustomEventsValues = [];
   final ViewHierarchyProcessor _viewHierarchyProcessor =
       ViewHierarchyProcessor();
-  GestureProcessor gestureProcessor = GestureProcessor();
 
   SessionWorkerIsolate(SessionIsolateConfig isolateConfig)
       : super(isolateConfig) {
@@ -262,7 +260,6 @@ class SessionWorkerIsolate extends WorkerIsolate
     await _startNewPageIfNeeded(mutationEvent);
     await _startNewPayloadIfNeeded(mutationEvent);
 
-    gestureProcessor.updateFrameState(mutationEvent.frame);
     _viewHierarchyProcessor.process(mutationEvent.frame.viewHierarchy);
     // Must be done before we serialize the frame, so the hash of the image is correct and exists!
     await _hashAndStoreAssets(mutationEvent);
@@ -271,10 +268,6 @@ class SessionWorkerIsolate extends WorkerIsolate
 
   Future<void> _processAnalyticsEvent(AnalyticsEvent event) async {
     if (_shouldDropAnalyticsEvent(event)) return;
-
-    if (event is GestureEvent) {
-      gestureProcessor.updateGestureEvent(event);
-    }
 
     await _startNewPayloadIfNeeded(event);
     await _addEventToPayload(event);

@@ -44,6 +44,36 @@ extension RenderObjectUtils on RenderObject {
   Rect globalPaintBounds(RenderObject? parent) =>
       MatrixUtils.transformRect(getTransformTo(parent), paintBounds);
 
+  String getSelector() {
+    List<Map<String, dynamic>> selectorPath = [];
+
+    RenderObject? currentObject = this;
+
+    // Traverse up the tree to get the selector path skipping the root object because it's not captured in our view hierarchy
+    while (currentObject != null) {
+      if (ignoredRenderObjects.contains(currentObject.runtimeType)) {
+        currentObject = currentObject.getParent();
+        continue;
+      }
+      int index = currentObject.getIndexAmongSameSiblingsType();
+
+      selectorPath.add({
+        "type": currentObject.runtimeType.toString(),
+        "index": index,
+      });
+
+      currentObject = currentObject.getParent();
+    }
+
+    // Add id for root object as it's the only 1 with an id
+    selectorPath.lastOrNull?["id"] = 0;
+
+    return selectorPath.reversed
+        .map((selector) =>
+            "/${selector["type"]}${selector["id"] == null ? "" : "#${selector["id"]}"}[${selector["index"]}]")
+        .join();
+  }
+
   bool isClickable() {
     if (parent is RenderSemanticsAnnotations) {
       final renderSemanticsParent = parent as RenderSemanticsAnnotations;
