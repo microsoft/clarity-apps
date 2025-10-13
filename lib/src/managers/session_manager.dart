@@ -158,10 +158,9 @@ class SessionWorkerIsolate extends WorkerIsolate
   SessionMetadata? _currentSessionMetadata;
   PageMetadata? _currentPageMetadata;
   PayloadMetadata? _currentPayloadMetadata;
+  ViewHierarchyProcessor? _viewHierarchyProcessor;
   final Map<String, String> _customTags = {};
   final List<String> _preSessionCustomEventsValues = [];
-  final ViewHierarchyProcessor _viewHierarchyProcessor =
-      ViewHierarchyProcessor();
 
   SessionWorkerIsolate(SessionIsolateConfig isolateConfig)
       : super(isolateConfig) {
@@ -260,7 +259,7 @@ class SessionWorkerIsolate extends WorkerIsolate
     await _startNewPageIfNeeded(mutationEvent);
     await _startNewPayloadIfNeeded(mutationEvent);
 
-    _viewHierarchyProcessor.process(mutationEvent.frame.viewHierarchy);
+    _viewHierarchyProcessor!.process(mutationEvent.frame.viewHierarchy);
     // Must be done before we serialize the frame, so the hash of the image is correct and exists!
     await _hashAndStoreAssets(mutationEvent);
     await _addEventToPayload(mutationEvent);
@@ -444,6 +443,8 @@ class SessionWorkerIsolate extends WorkerIsolate
         event.screenName,
         _currentSessionMetadata!);
     _currentPayloadMetadata = null;
+    _viewHierarchyProcessor = ViewHierarchyProcessor();
+
     Logger.info?.out("Starting new Clarity Page");
     Logger.debug?.out("PageMetadata $_currentPageMetadata");
 

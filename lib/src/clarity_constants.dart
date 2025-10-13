@@ -5,7 +5,7 @@ library;
 class ClarityConstants {
   ClarityConstants._();
 
-  static const String clarityVersion = "1.4.2";
+  static const String clarityVersion = "1.4.3";
 
   // SDK constants
   static const int customTagMaxLength = 255;

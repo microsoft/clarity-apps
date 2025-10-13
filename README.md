@@ -74,7 +74,7 @@ Or add the `clarity_flutter` dependency to your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
-  clarity_flutter: 1.4.2
+  clarity_flutter: 1.4.3
 ```
 
 ### Step 2: Import the Package

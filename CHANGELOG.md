@@ -1,3 +1,9 @@
+## 1.4.3
+
+### October 13, 2025
+
+- **[BugFix]** Fix an issue where heatmaps were not working correctly when using setScreenName API.
+
 ## 1.4.2
 
 ### September 22, 2025
