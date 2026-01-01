@@ -1,22 +1,17 @@
-// swift-tools-version:5.8
-import PackageDescription
-
 let package = Package(
-    name: "Clarity",
-    platforms: [
-        .iOS(.v13)
-    ],
-    products: [
-        .library(
-            name: "Clarity",
-            targets: ["Clarity"]
-        ),
+    // ...
+    dependencies: [
+        //// Option 1: Fetch latest version available. This allows automatic major version updates that may contain non-backward compatible changes.
+        .package(url: "https://github.com/microsoft/clarity-apps", branch: "main")
+        //// Option 2: Fetch a specific minor version range (e.g., 3.0.0 up to, but not including, 4.0.0).
+        // .package(url: "https://github.com/microsoft/clarity-apps", from: "3.0.0")
     ],
     targets: [
-        .binaryTarget(
-            name: "Clarity",
-            url: "https://www.clarity.ms/apps/resources/ios/Clarity-3.4.0.xcframework.zip",
-            checksum: "957194fbe8c3487c1018b4d419e808c070773cb1d355bca4a685db41a70553d5"
-        ),
+        .target(
+            name: "<target-name>",
+            dependencies: [
+                .product(name: "Clarity", package: "clarity-apps")
+            ]
+        )
     ]
 )
