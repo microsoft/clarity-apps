@@ -1,9 +1,9 @@
 let package = Package(
     // ...
     dependencies: [
-        //// Option 1: Fetch latest version available. This allows automatic major version updates that may contain non-backward compatible changes.
+        //// Option 1: Track the tip of the main branch. This follows branch updates over time and is not pinned to SemVer-tagged releases.
         .package(url: "https://github.com/microsoft/clarity-apps", branch: "main")
-        //// Option 2: Fetch a specific minor version range (e.g., 3.0.0 up to, but not including, 4.0.0).
+        //// Option 2: Use SemVer-tagged releases from 3.0.0 up to, but not including, 4.0.0 (that is, compatible 3.x updates).
         // .package(url: "https://github.com/microsoft/clarity-apps", from: "3.0.0")
     ],
     targets: [
